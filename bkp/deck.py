@@ -25,8 +25,8 @@ class Deck:
             else:
                 return self.deck[from_age].pop()
 
-    def return_card(self, card):
-        self.deck[card.get_age() - 1].insert(0, card)
+    def return_card(self, card, to_age):
+        self.deck[to_age].insert(0, card)
 
     def shuffle(self, age_deck_to_shuffle):
         random.shuffle(self.deck[age_deck_to_shuffle])

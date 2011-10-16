@@ -3,7 +3,6 @@ import random
 import player
 import deck_parser
 import deck
-from intput import intput
 
 class Game:
 
@@ -19,21 +18,8 @@ class Game:
             
                 
         print('Only allowed 2 players at this stage')
-        self.players = [player.Player(self), player.Player(self)]
-        
-        def melded_card(player):
-            for i in range(5):
-                if player.board[i].top_card != None: return player.board[i].get_top_card_reference().get_name()
-        
-        #sorting players play order
-        self.players = [(melded_card(player), player) for player in self.players]
-        self.players.sort(key = lambda pair: pair[0])
-        self.players = [pair[1] for pair in self.players]
-        
-        print ('Player order is: ')
-        for i in range(len(self.players)):
-            print(self.players[i].get_name())
-             
+        #self.players = [player.Player([self.draw(1), self.draw(1)], self), player.Player([self.draw(1), self.draw(1)], self)]
+        self.players = [player.Player(self)]
         #TODO: In GUI I will have to add 'ready' and actually determine first player using the melded card.
         self.play()                
         
@@ -63,29 +49,30 @@ class Game:
         print('6. Show the melded cards of some color.')
         print('7. Show symbol count.')        
         print()
-        action = intput('')        
+        action = input('')        
         print()
         
-        if action == 1:
+        if action == '1':
             player.draw(player.draw_age)
-        elif action == 2:
+        elif action == '2':
             player.meld()
-        elif action == 3:
-            player.dogma()
-        elif action == 4:
+        elif action == '3':
             pass
-        elif action == 5:
+        elif action == '4':
+            pass
+        elif action == '5':
             player.hand.print_self()
-        elif action == 6:
-            choice = intput('Choose color: Red - 1, Blue - 2, Yellow - 3, Purple - 4, Green -5')
+        elif action == '6':
+            choice = input ('Choose color: Red - 1, Blue - 2, Yellow - 3, Purple - 4, Green -5')
+            choice = int(choice)
             choice -= 1
             if choice not in range(5):
                 self.invalid_option(player)
             else:
                 player.board[choice].print_self()
-        elif action == 7:
+        elif action == '7':
             player.print_symobls_count()
-        elif action == 99:
+        elif action == '99':
             new_splay = input('Choose new splay mode for all your piles')        
             for i in range(5):
                 player.board[i].change_splay_mode(new_splay)
@@ -96,19 +83,6 @@ class Game:
         while not self.game_end:
             for i in range(len(self.players)):
                 self.take_turn(self.players[i])
-    
-    def return_card (self, card):
-        self.game_deck.return_card(card)
-    
-    def dogma(initiating_player, card_refernce):
-        pass
-    
-    def get_sharing_players(self):
-        pass
-        
-    def get_victims(self):
-        pass
-        
              
             
             

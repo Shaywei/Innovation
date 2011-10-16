@@ -56,17 +56,8 @@ class Pile:
                 self.pile[i].print_self()
                 print()
             print()
-    
-    def print_top_card(self):
-        if len(self.pile) == 0:
-            pass
-        else:
-            print ('Your top ' + self.color + ' card is: ')
-            self.pile[len(self.pile) - 1].print_self()
             
-    def get_top_card_reference(self):
-        return self.pile[len(self.pile)-1]
-        
+    
     def get_visibility(self):
         splay_index = splay_dict[self.splay_mode]
         return splay_visibility[splay_index]

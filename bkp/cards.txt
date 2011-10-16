@@ -445,7 +445,7 @@ Yellow. [Hexagon, three large houses, 2 kids and a dog in each], [Crown], [Leaf]
 
 Age 10 
 
-AI 
+A.I. 
 Purple. [Lightbulb], [Lightbulb], [Clock], [Hexagon, our new robot overlords]. 
 [Clock]: Draw and score a 10. 
 [Clock]: If Robotics and Software are top cards on any board, the single player with the lowest score wins. 
@@ -492,4 +492,3 @@ Purple. [Hexagon, an Ethernet port], [Clock], [Clock], [Lightbulb].
 [Clock]: You may splay your green cards up. 
 [Clock]: Draw and score a 10. 
 [Clock]: Draw and meld a 10 for every two [Clock] icons on your board. 
-

@@ -61,8 +61,7 @@ class DeckParser:
         color = ''
         symbols = ()
         dogmas = []
-        dogma_counter    = 0
-        #b_file = open('test.bla' , mode = 'w' , encoding = 'utf-8')
+
         with open(self.file_name) as a_file:
             for a_line in a_file:
                 
@@ -86,10 +85,7 @@ class DeckParser:
                     tmp_list=a_line.split(':')
                     dogma_symbol = tmp_list[0].strip('[] ').upper()
                     dogma_desc = tmp_list[1].strip()
-                    func_name = card_name.lower().replace(' ', '_')+str(dogma_counter)
-                    _tmp = __import__('dogmas', globals(), locals(), ['func_name'], -1)
-                    func = getattr(_tmp, func_name)
-                    dogmas.append((dogma_symbol, dogma_desc, func))
+                    dogmas.append((dogma_symbol, dogma_desc))
                 
                 # We found a name line.
                 elif a_line[0].isupper():
@@ -102,20 +98,6 @@ class DeckParser:
                     color = ''
                     symbols = ()
                     dogmas = []
-                    dogma_counter = 0
-
-                '''for i in range(len(dogmas)):
-                    b_file.write('def ' + card_name.lower().replace(' ', '_') +str(i)+'():\n')
-                    if dogmas[i][1].find('I demand') == -1:
-                        b_file.write('    demand = False\n')
-                    else:
-                        b_file.write('    demand = True\n')
-                    if dogmas[i][1].find('may') == -1:
-                        b_file.write('    may = False\n\n')
-                    else:
-                        b_file.write('    may = True\n\n')'''
-
-        #b_file.close()
                         
                     
 

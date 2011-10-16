@@ -27,16 +27,7 @@ class Hand:
                 self.hand[i].print_self()
                 print()
             print()
-    
-    def choose_card(self):
-        choice = input('choose a card from your hand:')
-        choice = int(choice)
-        if int(choice) <= self.hand_size:
-            return self.hand[choice-1]
-        else:
-            print ('Invalid choice. Choose again.')
-            return self.choose_card()
-        
+            
     def get_size(self):
         return self.hand_size
         

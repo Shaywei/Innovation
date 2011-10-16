@@ -1,8 +1,6 @@
 import game
 import pile
 import hand
-import score_pile
-from intput import intput
 
 colors_dict = {'RED' : 0, 'BLUE' : 1, 'YELLOW' : 2, 'PURPLE' : 3 , 'GREEN' : 4}
 
@@ -24,9 +22,8 @@ class Player:
         self.draw(1)
         self.draw(1)
         
-        self.score_pile = score_pile.ScorePile(self)
-        
         #TODO: score pile is a diffrent sort of pile that should be sorted by age and have a total.      
+        score_pile = None
         
         self.meld()
     def get_name(self):
@@ -52,12 +49,28 @@ class Player:
         
     def meld(self):
         '''This method shows hand, gets choice of card to meld and melds it'''
-        card_to_meld = self.hand.choose_card()
-        if card_to_meld == "invalid":
+        
+        # Check if there are cards to meld.
+        hand_size = self.hand.get_size()
+        if hand_size == 0:
+            print('Your hand is empty',)
             self.thegame.invalid_option(self)
         else:
-            pile_color = colors_dict[card_to_meld.get_color()]
-            self.board[pile_color].meld(card_to_meld)
+            print()
+        
+            # Show hand and get choice.
+            self.hand.print_self()
+            choice = input('Choose card number to meld:') 
+            card_num_to_meld = int(choice)
+            print()
+            
+            # Make sure choice is valid, and if so, meld.
+            if hand_size < int(card_num_to_meld):
+                self.thegame.invalid_option(self)
+            else:
+                card_to_meld = self.hand.remove_from_hand(card_num_to_meld)
+                pile_color = colors_dict[card_to_meld.get_color()]
+                self.board[pile_color].meld(card_to_meld)
             self.update_symbol_count()
         
     def transfer(self, player, source, to, constraint):
@@ -70,38 +83,8 @@ class Player:
         print('{0}, you drew:'.format(self.name))
         drawn_card.print_self()
         self.hand.add_to_hand(drawn_card)
-        
-    def choose_top_card(self):
-        #TODO: What if all piles are empty?
-        print('Choose one of your top cards:')
-        for i in range(5): 
-            print( str(i+1) +'.'),
-            self.board[i].print_top_card()
-        choice = intput ('\n')
-        return self.get_top_card_reference(choice)
     
-    def get_top_card_reference(self, pile_number):
-        self.board[pile_number].get_top_card_reference()
- 
-def may():
-    choice = input('You may choose to execute or not. Execute? (y/n)')
-    if choice == 'y':
-        return True
-    elif choice == 'n':
-        return False
-    else:
-        print('Incorrect choice, choose again (only \'y\' or \'n\' allowed).')
-        self.may()
-   
     def dogma(self):
-        card_to_execute = self.choose_top_card()
-        self.thegame.dogma(self, card_to_execute)
-    
-    def execute_dogma(card_reference):
-        pass
-        
-        
-        
-
+        self.update_symbol_count()
 
     
