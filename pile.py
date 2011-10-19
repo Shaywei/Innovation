@@ -65,7 +65,7 @@ class Pile:
             self.pile[len(self.pile) - 1].print_self()
             
     def get_top_card_reference(self):
-        return self.pile[len(self.pile)-1]
+        return self.top_card
         
     def get_visibility(self):
         splay_index = splay_dict[self.splay_mode]
@@ -102,11 +102,11 @@ class Pile:
         self.pile.append(card)                                                                 # Append new card.
         self.top_card = card                                                                   # Update new top_card.
         self.add_symbols_of_a_card((1,1,1,1), card.get_symbols())                              # Add new symbols.
-        print (card.name + 'Was melded.')
+        print ('\n'+card.name + ' Was melded.\n')
         
     def transfer_top_card(self):
         ''' This method removes the top card of a pile. '''
-        pile_size == len(self.pile)                                 
+        pile_size = len(self.pile)                                 
         if pile_size == 0:                                 # Check if pile is empty.
             return None
         else:                                              

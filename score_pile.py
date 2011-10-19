@@ -16,38 +16,43 @@ class ScorePile:
         self.owning_player = owning_player
         self.score_pile = []
         self.highest_card_age = None
+        self.lowest_card_age = None
         self.score = 0
        
                                           
     def print_self(self):
-        ''' This method prints the number of points the player has. '''
-        print(self.owning_player.get_name() + ' has: ' + str(self.score) + ' points.')
-        print()
-
-    def print_self(self):
         ''' This method prints the pile. '''
-        if len(self.pile) == 0:
+        if len(self.score_pile) == 0:
             print ('This pile is empty!')
         else:
             print ('Your score pile contains (from bottom to top):')
-            for i in range(len(self.pile)):
+            for i in range(len(self.score_pile)):
                 print('{0}. '.format(i+1),)
-                self.pile[i].print_self()
+                self.score_pile[i].print_self()
                 print()
             print()       
+            
+    def update_higest_lowest_ages(self):
+        assert self.score_pile != [] , 'updating empty score pile'
+        self.score_pile.sort(key = lambda card : card.age)
+        self.highest_card_age = self.score_pile[len(self.score_pile) - 1].age
+        self.highest_card_age = self.score_pile[0].age
+        print()
+        print(self.owning_player.get_name() + ', You now have: ' + str(self.score) + ' points!')
+        print()
         
-    #def transfer_card(self):
-        ''' This method removes the top card of a pile. 
-        pile_size == len(self.pile)                                 
-        if pile_size == 0:                                 # Check if pile is empty.
-            return None
-        else:                                              
-            top_card = self.pile.pop()
-            pile_size -= 1        
-            if pile_size == 0:                             # Check if we popped the last card
-                self.top_card = None
-            else:
-                self.top_card == self.pile[pile_size-1]    # If not, update top card.
-            if pile_size == 1 and splay_mode != 'NONE':    # Check if the pile is now unplayed
-                self.change_splay_mode('NONE')         
-            return top_card'''
+    def add_to_score_pile(self, card):
+        self.score += card.age
+        self.score_pile.append(card)
+        self.update_higest_lowest_ages()
+    
+    def remove_from_score_pile(self, index):
+        assert (index in range(len(self.score_pile) , 'Trying to remove a card that doesn\'t exist in score pile.'))
+        card_to_remove = self.score_pile.pop(index)
+        self.score -= card_to_remove.age
+        self.update_higest_lowest_ages()
+        return card_to_remove
+    
+    def get_filtered_score_pile(self, key):
+        return [card for card in self.score_pile if key(card)]
+          

@@ -62,7 +62,11 @@ class DeckParser:
         symbols = ()
         dogmas = []
         dogma_counter    = 0
-        #b_file = open('test.bla' , mode = 'w' , encoding = 'utf-8')
+        #names_file = open('names' , mode = 'w' , encoding = 'utf-8')
+        #names_file.write('card_names = { ')
+        #dogmas_file = open('dogmas.py' , mode = 'w' , encoding = 'utf-8')
+        #dogmas_tests_file = open('dogmas_tests.py' , mode = 'w' , encoding = 'utf-8')
+
         with open(self.file_name) as a_file:
             for a_line in a_file:
                 
@@ -86,10 +90,18 @@ class DeckParser:
                     tmp_list=a_line.split(':')
                     dogma_symbol = tmp_list[0].strip('[] ').upper()
                     dogma_desc = tmp_list[1].strip()
-                    func_name = card_name.lower().replace(' ', '_')+str(dogma_counter)
+                    type = None
+                    if dogma_desc.find('I demand') != -1:
+                        type = 'demand'
+                    elif dogma_desc.find('may') != -1:
+                        type = 'may'
+                    else:
+                        type = 'mandatory'
+                    func_name = card_name.lower().replace(' ', '_').replace('.', '')+str(dogma_counter)
                     _tmp = __import__('dogmas', globals(), locals(), ['func_name'], -1)
                     func = getattr(_tmp, func_name)
-                    dogmas.append((dogma_symbol, dogma_desc, func))
+                    dogmas.append((dogma_symbol, dogma_desc, type, func))
+                    dogma_counter += 1
                 
                 # We found a name line.
                 elif a_line[0].isupper():
@@ -98,24 +110,23 @@ class DeckParser:
                 # We found an empty line and it's after a card line.
                 elif a_line == '\n' and symbols != ():   # The second condition should only happen between age lines.      
                     self.game_deck.add_card_to_deck(card.Card(card_name, age, color, symbols, dogmas), age)
+                    #names_file.write('\''+card_name+'\' , ')
+                    '''for i in range(len(dogmas)):
+                        dogmas_file.write('def ' + card_name.lower().replace(' ', '_').replace('.', '') +str(i)+'(my_player')
+                        if dogmas[i][2] == 'demand': 
+                            dogmas_file.write(' , demanding_player')
+                        dogmas_file.write('):\n    pass\n\n')'''
+                    #dogmas_tests_file.write('def test_' + card_name.lower().replace(' ', '_').replace('.', '') +'(self):\n    self.private_setup(\''+card_name+'\','+str(age)+')\n\n')
                     card_name = ''
                     color = ''
                     symbols = ()
-                    dogmas = []
                     dogma_counter = 0
+                    dogmas = []
+                    
 
-                '''for i in range(len(dogmas)):
-                    b_file.write('def ' + card_name.lower().replace(' ', '_') +str(i)+'():\n')
-                    if dogmas[i][1].find('I demand') == -1:
-                        b_file.write('    demand = False\n')
-                    else:
-                        b_file.write('    demand = True\n')
-                    if dogmas[i][1].find('may') == -1:
-                        b_file.write('    may = False\n\n')
-                    else:
-                        b_file.write('    may = True\n\n')'''
-
-        #b_file.close()
+        #names_file.write('}') # Need to delete the last ,
+        #dogmas_file.close()
+        #dogmas_tests_file.close()
                         
                     
 

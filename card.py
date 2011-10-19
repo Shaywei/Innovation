@@ -16,20 +16,27 @@ class Card:
         It has the following methods:
                                             activate() - Activates one dogma at a time.
         '''
+    def __lt__(self,other):
+        if self.age != other.age: return self.age < other.age               
+        else: return self.name < other.name
+
+    def __eq__(self,other):
+        if self is None: return other is None
+        elif other is None: return False
+        else: return self.name == other.name
+    
     def __init__(self, name, age, color, symbols, dogmas):
         self.name = name
         self.age = age
         self.color = color
         self.symbols = symbols
         self.dogmas = dogmas
-#        import name.lower() from dogmas
-#        self.dogma_function = name.lower().replace(' ', '_')
 
     def print_self(self):
         print(self.name + ' (' + str(self.age) + ', '+ self.color +')')
         print('Symbols: ' + str(self.symbols))
         for dogma in self.dogmas:
-            print(dogma[0] + ': ' + dogma[1] + ' ' + str(dogma[2]))
+            print(dogma[0] + ': ' + dogma[1])
         print()
         
     def get_color(self):
@@ -43,7 +50,9 @@ class Card:
         
     def get_name(self):
         return self.name
-
+    
+    def get_dogmas(self):
+        return self.dogmas
     
     def dogma(self):
         pass

@@ -65,6 +65,7 @@ Blue. [Hexagon, a writing quill], [Lightbulb], [Lightbulb], [Crown].
 [Lightbulb]: Draw a 2. 
 
 Age 2 
+
 Calendar 
 Blue. [Hexagon, a sundial], [Leaf], [Leaf], [Lightbulb]. 
 [Leaf]: If you have more cards in your score pile than in your hand, draw two 3. 
@@ -306,7 +307,7 @@ Yellow. [Leaf], [Factory], [Leaf], [Hexagon, a syringe].
 Age 7 
 
 Bicycle 
-Green. [Crown], [Crown], [c], [Hexagon, a bicycle]. 21 
+Green. [Crown], [Crown], [Clock], [Hexagon, a bicycle].
 [Crown]: You may exchange all the cards in your hand with all the cards in your score pile. If you exchange one, you must exchange them all. 
 
 Combustion 
@@ -445,7 +446,7 @@ Yellow. [Hexagon, three large houses, 2 kids and a dog in each], [Crown], [Leaf]
 
 Age 10 
 
-AI 
+A.I. 
 Purple. [Lightbulb], [Lightbulb], [Clock], [Hexagon, our new robot overlords]. 
 [Clock]: Draw and score a 10. 
 [Clock]: If Robotics and Software are top cards on any board, the single player with the lowest score wins. 

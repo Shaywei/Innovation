@@ -1,628 +1,500 @@
-def agriculture0():
-    demand = False
-    may = True
-
-def archery0():
-    demand = True
-    may = False
-
-def city_states0():
-    demand = True
-    may = False
-
-def clothing0():
-    demand = False
-    may = False
-
-def clothing1():
-    demand = False
-    may = False
-
-def code_of_laws0():
-    demand = False
-    may = True
-
-def domestication0():
-    demand = False
-    may = False
-
-def masonry0():
-    demand = False
-    may = True
-
-def metalworking0():
-    demand = False
-    may = False
-
-def mysticism0():
-    demand = False
-    may = False
-
-def oars0():
-    demand = True
-    may = False
-
-def oars1():
-    demand = False
-    may = False
-
-def pottery0():
-    demand = False
-    may = True
-
-def pottery1():
-    demand = False
-    may = False
-
-def sailing0():
-    demand = False
-    may = False
-
-def the_wheel0():
-    demand = False
-    may = False
-
-def tools0():
-    demand = False
-    may = True
-
-def tools1():
-    demand = False
-    may = True
-
-def writing0():
-    demand = False
-    may = False
-
-def calendar0():
-    demand = False
-    may = False
-
-def canal_building0():
-    demand = False
-    may = True
-
-def currency0():
-    demand = False
-    may = True
-
-def construction0():
-    demand = True
-    may = False
-
-def construction1():
-    demand = False
-    may = False
-
-def fermenting0():
-    demand = False
-    may = False
-
-def mapmaking0():
-    demand = True
-    may = False
-
-def mapmaking1():
-    demand = False
-    may = False
-
-def mathematics0():
-    demand = False
-    may = True
-
-def monotheism0():
-    demand = True
-    may = False
-
-def monotheism1():
-    demand = False
-    may = False
-
-def philosophy0():
-    demand = False
-    may = True
-
-def philosophy1():
-    demand = False
-    may = True
-
-def road_building0():
-    demand = False
-    may = True
-
-def alchemy0():
-    demand = False
-    may = False
-
-def alchemy1():
-    demand = False
-    may = False
-
-def education0():
-    demand = False
-    may = True
-
-def compass0():
-    demand = True
-    may = False
-
-def engineering0():
-    demand = True
-    may = False
-
-def engineering1():
-    demand = False
-    may = True
-
-def feudalism0():
-    demand = True
-    may = False
-
-def feudalism1():
-    demand = False
-    may = True
-
-def machinery0():
-    demand = True
-    may = False
-
-def machinery1():
-    demand = False
-    may = True
-
-def medicine0():
-    demand = True
-    may = False
-
-def optics0():
-    demand = False
-    may = False
-
-def paper0():
-    demand = False
-    may = True
-
-def paper1():
-    demand = False
-    may = False
-
-def translation0():
-    demand = False
-    may = True
-
-def translation1():
-    demand = False
-    may = False
-
-def anatomy0():
-    demand = True
-    may = False
-
-def colonialism0():
-    demand = False
-    may = False
-
-def enterprise0():
-    demand = True
-    may = False
-
-def enterprise1():
-    demand = False
-    may = True
-
-def experimentation0():
-    demand = False
-    may = False
-
-def gunpowder0():
-    demand = True
-    may = False
-
-def gunpowder1():
-    demand = False
-    may = False
-
-def invention0():
-    demand = False
-    may = True
-
-def invention1():
-    demand = False
-    may = False
-
-def navigation0():
-    demand = True
-    may = False
-
-def perspective0():
-    demand = False
-    may = True
-
-def printing_press0():
-    demand = False
-    may = True
-
-def printing_press1():
-    demand = False
-    may = True
-
-def reformation0():
-    demand = False
-    may = True
-
-def reformation1():
-    demand = False
-    may = True
-
-def astronomy0():
-    demand = False
-    may = False
-
-def astronomy1():
-    demand = False
-    may = False
-
-def banking0():
-    demand = True
-    may = False
-
-def banking1():
-    demand = False
-    may = True
-
-def chemistry0():
-    demand = False
-    may = True
-
-def chemistry1():
-    demand = False
-    may = False
-
-def coal0():
-    demand = False
-    may = False
-
-def coal1():
-    demand = False
-    may = True
-
-def coal2():
-    demand = False
-    may = True
-
-def measurement0():
-    demand = False
-    may = True
-
-def physics0():
-    demand = False
-    may = False
-
-def societies0():
-    demand = True
-    may = False
-
-def statistics0():
-    demand = True
-    may = False
-
-def statistics1():
-    demand = False
-    may = True
-
-def steam_engine0():
-    demand = False
-    may = False
-
-def the_pirate_code0():
-    demand = True
-    may = False
-
-def the_pirate_code1():
-    demand = False
-    may = False
-
-def atomic_theory0():
-    demand = False
-    may = True
-
-def atomic_theory1():
-    demand = False
-    may = False
-
-def canning0():
-    demand = False
-    may = True
-
-def canning1():
-    demand = False
-    may = True
-
-def classification0():
-    demand = False
-    may = False
-
-def democracy0():
-    demand = False
-    may = True
-
-def emancipation0():
-    demand = True
-    may = False
-
-def emancipation1():
-    demand = False
-    may = True
-
-def encyclopedia0():
-    demand = False
-    may = True
-
-def industrialization0():
-    demand = False
-    may = False
-
-def industrialization1():
-    demand = False
-    may = True
-
-def machine_tools0():
-    demand = False
-    may = False
-
-def metric_system0():
-    demand = False
-    may = True
-
-def metric_system1():
-    demand = False
-    may = True
-
-def vaccination0():
-    demand = True
-    may = False
-
-def vaccination1():
-    demand = False
-    may = False
-
-def bicycle0():
-    demand = False
-    may = True
-
-def combustion0():
-    demand = True
-    may = False
-
-def electricity0():
-    demand = False
-    may = False
-
-def evolution0():
-    demand = False
-    may = True
-
-def explosives0():
-    demand = True
-    may = False
-
-def lighting0():
-    demand = False
-    may = True
-
-def publications0():
-    demand = False
-    may = True
-
-def publications1():
-    demand = False
-    may = True
-
-def railroad0():
-    demand = False
-    may = False
-
-def railroad1():
-    demand = False
-    may = True
-
-def refrigeration0():
-    demand = True
-    may = False
-
-def refrigeration1():
-    demand = False
-    may = True
-
-def sanitation0():
-    demand = True
-    may = False
-
-def antibiotics0():
-    demand = False
-    may = True
-
-def corporations0():
-    demand = True
-    may = False
-
-def corporations1():
-    demand = False
-    may = False
-
-def empiricism0():
-    demand = False
-    may = True
-
-def empiricism1():
-    demand = False
-    may = False
-
-def flight0():
-    demand = False
-    may = True
-
-def flight1():
-    demand = False
-    may = True
-
-def mass_media0():
-    demand = False
-    may = True
-
-def mass_media1():
-    demand = False
-    may = True
-
-def mobility0():
-    demand = True
-    may = False
-
-def quantum_theory0():
-    demand = False
-    may = True
-
-def rocketry0():
-    demand = False
-    may = False
-
-def skyscrapers0():
-    demand = True
-    may = False
-
-def socialism0():
-    demand = False
-    may = True
-
-def collaboration0():
-    demand = True
-    may = False
-
-def collaboration1():
-    demand = False
-    may = False
-
-def composites0():
-    demand = True
-    may = False
-
-def computers0():
-    demand = False
-    may = True
-
-def computers1():
-    demand = False
-    may = False
-
-def ecology0():
-    demand = False
-    may = True
-
-def fission0():
-    demand = True
-    may = False
-
-def fission1():
-    demand = False
-    may = False
-
-def genetics0():
-    demand = False
-    may = False
-
-def satellites0():
-    demand = False
-    may = False
-
-def satellites1():
-    demand = False
-    may = True
-
-def satellites2():
-    demand = False
-    may = False
-
-def services0():
-    demand = True
-    may = False
-
-def specialization0():
-    demand = False
-    may = False
-
-def specialization1():
-    demand = False
-    may = True
-
-def suburbia0():
-    demand = False
-    may = True
-
-def ai0():
-    demand = False
-    may = False
-
-def ai1():
-    demand = False
-    may = False
-
-def bioengineering0():
-    demand = False
-    may = False
-
-def bioengineering1():
-    demand = False
-    may = False
-
-def databases0():
-    demand = True
-    may = False
-
-def globalization0():
-    demand = True
-    may = False
-
-def globalization1():
-    demand = False
-    may = False
-
-def miniaturization0():
-    demand = False
-    may = True
-
-def robotics0():
-    demand = False
-    may = False
-
-def self_service0():
-    demand = False
-    may = False
-
-def self_service1():
-    demand = False
-    may = False
-
-def software0():
-    demand = False
-    may = False
-
-def software1():
-    demand = False
-    may = False
-
-def stem_cells0():
-    demand = False
-    may = True
-
-def the_internet0():
-    demand = False
-    may = True
-
-def the_internet1():
-    demand = False
-    may = False
-
-def the_internet2():
-    demand = False
-    may = False
+
+colors_dict = {'RED' : 0, 'BLUE' : 1, 'YELLOW' : 2, 'PURPLE' : 3 , 'GREEN' : 4}
+
+def agriculture0(my_player):
+    if my_player.hand.get_size() == 0:
+        pass #TODO: in GUI send msg to player.
+    else:
+        card_to_return = my_player.choose_card_from_hand()                  # Choose a card to return
+        from_one_age_higher = card_to_return.age + 1                        # Calculate one age higher
+        my_player.thegame.game_deck.return_card(card_to_return)             # Retrun the card
+        card_to_score = my_player.thegame.draw(from_one_age_higher)         # Draw a card of one age higher
+        my_player.score_card(card_to_score)                                 # And score it.
+        
+def archery0(my_player , demanding_player):
+    my_player.hand.add_to_hand(my_player.draw_card(1))                      # Draw a 1
+    max_age = my_player.hand.hand[len(my_player.hand.hand)-1].age           # Calculate max age
+    cards_to_choose_from = my_player.hand.get_filtered_hand(lambda card: card.age == max_age)   # Make a list of all the card of maximum age
+    chosen_card = my_player.choose_card_from_list(cards_to_choose_from) # Make victim choose a card from them.
+    demanding_player.hand.add_to_hand(chosen_card)                               # Move the card to the demanding player's hand
+    
+
+def city_states0(my_player , demanding_player):
+    if my_player.symbol_count[3] > 3:   
+        top_cards_with_castles = []
+        for i in range(5):
+            top_card = my_player.board[i].get_top_card_reference()
+            if top_card != None and 'CASTLE' in top_card.symbols: top_cards_with_castles.append(top_card)
+        if len (top_cards_with_castles) == 0: print('No top cards with casles.')
+        else:
+            chosen_card = my_player.choose_card_from_list(top_cards_with_castles) # This is only a reference to the card to be removed.
+            removed_card = my_player.board[colors_dict[chosen_card.color]].transfer_top_card()
+            demanding_player.meld_card(removed_card)
+            my_player.draw_card(1)
+    else:
+        print(my_player.get_name() + ' has less then 4 castles')
+
+def clothing0(my_player):
+    pass
+
+def clothing1(my_player):
+    pass
+
+def code_of_laws0(my_player):
+    pass
+
+def domestication0(my_player):
+    pass
+
+def masonry0(my_player):
+    pass
+
+def metalworking0(my_player):
+    pass
+
+def mysticism0(my_player):
+    pass
+
+def oars0(my_player , demanding_player):
+    pass
+
+def oars1(my_player):
+    pass
+
+def pottery0(my_player):
+    pass
+
+def pottery1(my_player):
+    pass
+
+def sailing0(my_player):
+    drawn_card = my_player.draw_card(1)
+    my_player.meld_card(drawn_card)
+
+def the_wheel0(my_player):
+    my_player.hand.add_to_hand(my_player.draw_card(1))
+    my_player.hand.add_to_hand(my_player.draw_card(1))
+
+def tools0(my_player):
+    pass
+
+def tools1(my_player):
+    pass
+
+def writing0(my_player):
+    my_player.hand.add_to_hand(my_player.draw_card(2))
+
+def calendar0(my_player):
+    pass
+
+def canal_building0(my_player):
+    pass
+
+def currency0(my_player):
+    pass
+
+def construction0(my_player , demanding_player):
+    pass
+
+def construction1(my_player):
+    pass
+
+def fermenting0(my_player):
+    pass
+
+def mapmaking0(my_player , demanding_player):
+    pass
+
+def mapmaking1(my_player):
+    pass
+
+def mathematics0(my_player):
+    pass
+
+def monotheism0(my_player , demanding_player):
+    pass
+
+def monotheism1(my_player):
+    pass
+
+def philosophy0(my_player):
+    pass
+
+def philosophy1(my_player):
+    pass
+
+def road_building0(my_player):
+    pass
+
+def alchemy0(my_player):
+    pass
+
+def alchemy1(my_player):
+    pass
+
+def education0(my_player):
+    pass
+
+def compass0(my_player , demanding_player):
+    pass
+
+def engineering0(my_player , demanding_player):
+    pass
+
+def engineering1(my_player):
+    pass
+
+def feudalism0(my_player , demanding_player):
+    pass
+
+def feudalism1(my_player):
+    pass
+
+def machinery0(my_player , demanding_player):
+    pass
+
+def machinery1(my_player):
+    pass
+
+def medicine0(my_player , demanding_player):
+    pass
+
+def optics0(my_player):
+    pass
+
+def paper0(my_player):
+    pass
+
+def paper1(my_player):
+    pass
+
+def translation0(my_player):
+    pass
+
+def translation1(my_player):
+    pass
+
+def anatomy0(my_player , demanding_player):
+    pass
+
+def colonialism0(my_player):
+    pass
+
+def enterprise0(my_player , demanding_player):
+    pass
+
+def enterprise1(my_player):
+    pass
+
+def experimentation0(my_player):
+    pass
+
+def gunpowder0(my_player , demanding_player):
+    pass
+
+def gunpowder1(my_player):
+    pass
+
+def invention0(my_player):
+    pass
+
+def invention1(my_player):
+    pass
+
+def navigation0(my_player , demanding_player):
+    pass
+
+def perspective0(my_player):
+    pass
+
+def printing_press0(my_player):
+    pass
+
+def printing_press1(my_player):
+    pass
+
+def reformation0(my_player):
+    pass
+
+def reformation1(my_player):
+    pass
+
+def astronomy0(my_player):
+    pass
+
+def astronomy1(my_player):
+    pass
+
+def banking0(my_player , demanding_player):
+    pass
+
+def banking1(my_player):
+    pass
+
+def chemistry0(my_player):
+    pass
+
+def chemistry1(my_player):
+    pass
+
+def coal0(my_player):
+    pass
+
+def coal1(my_player):
+    pass
+
+def coal2(my_player):
+    pass
+
+def measurement0(my_player):
+    pass
+
+def physics0(my_player):
+    pass
+
+def societies0(my_player , demanding_player):
+    pass
+
+def statistics0(my_player , demanding_player):
+    pass
+
+def statistics1(my_player):
+    pass
+
+def steam_engine0(my_player):
+    pass
+
+def the_pirate_code0(my_player , demanding_player):
+    pass
+
+def the_pirate_code1(my_player):
+    pass
+
+def atomic_theory0(my_player):
+    pass
+
+def atomic_theory1(my_player):
+    pass
+
+def canning0(my_player):
+    pass
+
+def canning1(my_player):
+    pass
+
+def classification0(my_player):
+    pass
+
+def democracy0(my_player):
+    pass
+
+def emancipation0(my_player , demanding_player):
+    pass
+
+def emancipation1(my_player):
+    pass
+
+def encyclopedia0(my_player):
+    pass
+
+def industrialization0(my_player):
+    pass
+
+def industrialization1(my_player):
+    pass
+
+def machine_tools0(my_player):
+    pass
+
+def metric_system0(my_player):
+    pass
+
+def metric_system1(my_player):
+    pass
+
+def vaccination0(my_player , demanding_player):
+    pass
+
+def vaccination1(my_player):
+    pass
+
+def bicycle0(my_player):
+    pass
+
+def combustion0(my_player , demanding_player):
+    pass
+
+def electricity0(my_player):
+    pass
+
+def evolution0(my_player):
+    pass
+
+def explosives0(my_player , demanding_player):
+    pass
+
+def lighting0(my_player):
+    pass
+
+def publications0(my_player):
+    pass
+
+def publications1(my_player):
+    pass
+
+def railroad0(my_player):
+    pass
+
+def railroad1(my_player):
+    pass
+
+def refrigeration0(my_player , demanding_player):
+    pass
+
+def refrigeration1(my_player):
+    pass
+
+def sanitation0(my_player , demanding_player):
+    pass
+
+def antibiotics0(my_player):
+    pass
+
+def corporations0(my_player , demanding_player):
+    pass
+
+def corporations1(my_player):
+    pass
+
+def empiricism0(my_player):
+    pass
+
+def empiricism1(my_player):
+    pass
+
+def flight0(my_player):
+    pass
+
+def flight1(my_player):
+    pass
+
+def mass_media0(my_player):
+    pass
+
+def mass_media1(my_player):
+    pass
+
+def mobility0(my_player , demanding_player):
+    pass
+
+def quantum_theory0(my_player):
+    pass
+
+def rocketry0(my_player):
+    pass
+
+def skyscrapers0(my_player , demanding_player):
+    pass
+
+def socialism0(my_player):
+    pass
+
+def collaboration0(my_player , demanding_player):
+    pass
+
+def collaboration1(my_player):
+    pass
+
+def composites0(my_player , demanding_player):
+    pass
+
+def computers0(my_player):
+    pass
+
+def computers1(my_player):
+    pass
+
+def ecology0(my_player):
+    pass
+
+def fission0(my_player , demanding_player):
+    pass
+
+def fission1(my_player):
+    pass
+
+def genetics0(my_player):
+    pass
+
+def satellites0(my_player):
+    pass
+
+def satellites1(my_player):
+    pass
+
+def satellites2(my_player):
+    pass
+
+def services0(my_player , demanding_player):
+    pass
+
+def specialization0(my_player):
+    pass
+
+def specialization1(my_player):
+    pass
+
+def suburbia0(my_player):
+    pass
+
+def ai0(my_player):
+    pass
+
+def ai1(my_player):
+    pass
+
+def bioengineering0(my_player):
+    pass
+
+def bioengineering1(my_player):
+    pass
+
+def databases0(my_player , demanding_player):
+    pass
+
+def globalization0(my_player , demanding_player):
+    pass
+
+def globalization1(my_player):
+    pass
+
+def miniaturization0(my_player):
+    pass
+
+def robotics0(my_player):
+    pass
+
+def self_service0(my_player):
+    pass
+
+def self_service1(my_player):
+    pass
+
+def software0(my_player):
+    pass
+
+def software1(my_player):
+    pass
+
+def stem_cells0(my_player):
+    pass
+
+def the_internet0(my_player):
+    pass
+
+def the_internet1(my_player):
+    pass
+
+def the_internet2(my_player):
+    pass
 
