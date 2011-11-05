@@ -214,7 +214,17 @@ class TestDogmas(unittest.TestCase):
         names_of_cards_in_players_hand = [card.name for card in player.hand.hand]
         for name in list_of_cards_to_check: 
             self.assertTrue(name in names_of_cards_in_players_hand,  player.name+ '\'s hand doesnt contain: ' + name + ' but contains: ' + str([names_of_cards_in_players_hand]))
-    
+
+    def assert_hand_not_contains(self, player, list_of_cards_to_check):
+        answer = True
+        names_of_cards_in_players_hand = [card.name for card in player.hand.hand]
+        problematic_name = ''
+        for name in list_of_cards_to_check: 
+            if name in names_of_cards_in_players_hand: 
+                answer = False
+                problematic_name = name
+        self.assertTrue(answer, problematic_name + ' is in the hand of: ' + player.name)   
+            
     def assert_player_has_achievement(self, player, achievement_name):
         self.assertTrue(achievement_name not in self.thegame.available_special_achievements , achievement_name + ' is still available.')
         self.assertTrue(achievement_name in player.achievements , achievement_name + ' is not claimed by '+player.name)
@@ -227,21 +237,21 @@ class TestDogmas(unittest.TestCase):
         
     def assert_melded(self, player, list_of_card_names):
         answer = True
-        problamatic_name = ''
+        problematic_name = ''
         for name in list_of_card_names: 
             if not player.check_if_melded(name): 
                 answer = False
-                problamatic_name = name
-        self.assertTrue(answer, problamatic_name + ' is not melded for ' + player.name)   
+                problematic_name = name
+        self.assertTrue(answer, problematic_name + ' is not melded for ' + player.name)   
         
     def assert_not_melded(self, player, list_of_card_names):
         answer = True
-        problamatic_name = ''
+        problematic_name = ''
         for name in list_of_card_names: 
             if player.check_if_melded(name): 
                 answer = False
-                problamatic_name = name                
-        self.assertTrue(answer, problamatic_name + ' is melded for ' + player.name)      
+                problematic_name = name                
+        self.assertTrue(answer, problematic_name + ' is melded for ' + player.name)      
         
     def assert_top_card(self, player, name, color):
         top_card = player.board[colors_dict[color]].top_card
@@ -299,7 +309,7 @@ class TestDogmas(unittest.TestCase):
             self.assert_highest_age_melded(player, age)
 
     # Tests Tests Tests !!!
-    
+    '''
     def test_agriculture(self):
         
         orginal_age5_deck_count = len(self.thegame.game_deck.deck[4])
@@ -1071,7 +1081,33 @@ class TestDogmas(unittest.TestCase):
         self.assert_not_melded(self.dummy_victim, ['City States','Domestication','Tools'])
         self.assert_score(self.dummy_acting_player, 3)
         self.assert_splay_mode(self.dummy_acting_player, 'RED', 'LEFT')
-    
+    '''
+    def test_feudalism(self):
+	
+        # Giving shareres symbols
+        self.meld_cards_by_list(self.dummy_sharer, [('Masonry',1)])	
+        
+        # To splay
+        self.meld_cards_by_list(self.dummy_sharer, [('City States',1),('Code of Laws',1)])	
+
+        # Giving victim a card with castle
+        self.draw_cards_by_list(self.dummy_victim, [('Tools',1),('Agriculture',1)])	
+        
+        self.private_setup('Feudalism',3)
+
+        self.assert_hand_not_contains(self.dummy_victim, ['Tools'])      
+        self.assert_hand_contains(self.dummy_acting_player, ['Tools'])
+        self.assert_hand_contains(self.dummy_victim, ['Agriculture'])
+        self.assert_splay_mode(self.dummy_sharer, 'PURPLE', 'LEFT')
+        self.assert_splay_mode(self.dummy_sharer, 'Yellow', 'None')
+        self.assert_splay_mode(self.dummy_acting_player, 'PURPLE', 'None')
+        self.assert_splay_mode(self.dummy_acting_player, 'Yellow', 'None')
+        self.assert_hand_size(self.dummy_acting_player, 2)
+        
+        
+        
+        
+        
         
 parsing_suite = unittest.TestLoader().loadTestsFromTestCase(TestDeckParsing)
 dogma_suite = unittest.TestLoader().loadTestsFromTestCase(TestDogmas)

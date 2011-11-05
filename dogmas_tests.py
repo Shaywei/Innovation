@@ -1,7 +1,4 @@
 
-    def test_feudalism(self):
-        self.private_setup('Feudalism',3)
-
     def test_machinery(self):
         self.private_setup('Machinery',3)
 

@@ -458,10 +458,11 @@ def engineering1(my_player):
     splay_color(my_player, 'RED' , 'LEFT')
 
 def feudalism0(my_player , demanding_player):
-    pass
-
+    card_to_transfer = choose_card_from_hand(my_player, lambda card: 'CASTLE' in card.symbols)
+    if card_to_transfer is not None: demanding_player.add_card_to_hand(card_to_transfer)
+        
 def feudalism1(my_player):
-    pass
+    splay_color_with_choice(my_player, ['YELLOW', 'PURPLE'], 'LEFT')
 
 def machinery0(my_player , demanding_player):
     pass
