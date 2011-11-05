@@ -1104,7 +1104,42 @@ class TestDogmas(unittest.TestCase):
         self.assert_splay_mode(self.dummy_acting_player, 'Yellow', 'None')
         self.assert_hand_size(self.dummy_acting_player, 2)
         
+
+    def test_machinery(self):
         
+        # Giving shareres symbols
+        self.meld_cards_by_list(self.dummy_sharer, [('Agriculture',1)])
+        
+        # To splay
+        self.meld_cards_by_list(self.dummy_sharer, [('Archery',1),('Metalworking',1)])
+        
+        # Giving sharer card with castle to score
+        self.draw_cards_by_list(self.dummy_sharer, [('Oars',1)])
+        
+        # Giving victim cards
+        self.draw_cards_by_list(self.dummy_victim, [('Tools',1),('Monotheism',2), ('Industrialization', 6)])
+        
+        self.draw_cards_by_list(self.dummy_acting_player, [('Specialization',9), ('Collaboration', 9), ('Bicycle', 7)])
+        
+        self.private_setup('Machinery',3)
+        
+        # Test demand
+        self.assert_hand_not_contains(self.dummy_victim, ['Tools', 'Monotheism', 'Industrialization'])      
+        self.assert_hand_not_contains(self.dummy_acting_player, ['Specialization', 'Collaboration'])
+        self.assert_hand_contains(self.dummy_acting_player, ['Bicycle', 'Tools', 'Industrialization'])
+        self.assert_hand_contains(self.dummy_victim, ['Specialization', 'Collaboration'])
+        self.assert_splay_mode(self.dummy_sharer, 'RED', 'LEFT')
+        self.assert_splay_mode(self.dummy_acting_player, 'RED', 'None')
+        self.assert_hand_size(self.dummy_acting_player, 4)
+        
+        # Test non-demand
+        self.assert_hand_not_contains(self.dummy_sharer, ['Oars'])
+        self.assert_score_pile_contains(self.dummy_sharer, ['Oars'])
+        self.assert_score(self.dummy_sharer, 1)
+        self.assert_hand_not_contains(self.dummy_acting_player, ['Monotheism'])
+        self.assert_score_pile_contains(self.dummy_acting_player, ['Monotheism'])
+        self.assert_score(self.dummy_acting_player, 2)
+
         
         
         

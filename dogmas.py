@@ -465,10 +465,21 @@ def feudalism1(my_player):
     splay_color_with_choice(my_player, ['YELLOW', 'PURPLE'], 'LEFT')
 
 def machinery0(my_player , demanding_player):
-    pass
+    highest_age = demanding_player.hand.max_age
+    highest_cards = demanding_player.hand.pop_filtered_hand(lambda card: card.age == highest_age)
+    victims_cards = my_player.hand.pop_filtered_hand(lambda card: True)
+    for card in victims_cards:
+        demanding_player.add_card_to_hand(card)
+    for card in highest_cards:
+        my_player.add_card_to_hand(card)
+        
 
 def machinery1(my_player):
-    pass
+    card_to_score = choose_card_from_hand(my_player, lambda card: 'CASTLE' in card.symbols)
+    if card_to_score is not None:
+        my_player.score_card_by_card(card_to_score)
+        something_happened(my_player)   
+    splay_color(my_player, 'RED', 'LEFT')
 
 def medicine0(my_player , demanding_player):
     pass

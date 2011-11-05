@@ -1,7 +1,4 @@
 
-    def test_machinery(self):
-        self.private_setup('Machinery',3)
-
     def test_medicine(self):
         self.private_setup('Medicine',3)
 
