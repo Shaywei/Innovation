@@ -45,21 +45,21 @@ class Hand:
         return self.hand_size
         
     def add_to_hand(self, card):
+        print(self.owning_player.name+' added: '+card.name + ' to hand.')
         self.hand.append(card)
         self.update()
 
-    def remove_from_hand(self, index):
-        index -= 1
+    def remove_by_index(self, index):    
         card_to_return = self.hand.pop(index)
+        print('Removed: '+card_to_return.name)
         self.update()
         return card_to_return
         
-    def remove_from_hand_by_name(self, name):
+    def remove_by_name(self, name):
         card_to_return_index = [card.name for card in self.hand].index(name)
         card_to_return = self.hand.pop(card_to_return_index)
         self.update()
         return card_to_return
-
-        
+                
     def get_filtered_hand(self, key):
         return [card for card in self.hand if key(card)]

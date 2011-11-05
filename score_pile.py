@@ -15,9 +15,10 @@ class ScorePile:
         
         self.owning_player = owning_player
         self.score_pile = []
-        self.highest_card_age = None
-        self.lowest_card_age = None
+        self.max_age_in_score_pile = 0
+        self.min_age_in_score_pile = 0
         self.score = 0
+        self.score_pile_size = 0
        
                                           
     def print_self(self):
@@ -32,27 +33,43 @@ class ScorePile:
                 print()
             print()       
             
-    def update_higest_lowest_ages(self):
-        assert self.score_pile != [] , 'updating empty score pile'
-        self.score_pile.sort(key = lambda card : card.age)
-        self.highest_card_age = self.score_pile[len(self.score_pile) - 1].age
-        self.highest_card_age = self.score_pile[0].age
+    def update(self):
+        self.score_pile_size = len(self.score_pile)
+        if self.score_pile_size > 0:
+            self.score_pile.sort()
+            self.max_age_in_score_pile = self.score_pile[len(self.score_pile) - 1].age
+            self.min_age_in_score_pile = self.score_pile[0].age
+        else:
+            self.max_age_in_score_pile = 0
+            self.min_age_in_score_pile = 0
+        
+        
+
         print()
         print(self.owning_player.get_name() + ', You now have: ' + str(self.score) + ' points!')
         print()
         
     def add_to_score_pile(self, card):
+        self.owning_player.number_of_scored_cards_this_turn += 1
         self.score += card.age
         self.score_pile.append(card)
-        self.update_higest_lowest_ages()
+        self.update()
     
-    def remove_from_score_pile(self, index):
+    def remove_by_index(self, index):
         assert (index in range(len(self.score_pile) , 'Trying to remove a card that doesn\'t exist in score pile.'))
         card_to_remove = self.score_pile.pop(index)
         self.score -= card_to_remove.age
-        self.update_higest_lowest_ages()
+        self.update()
+        return card_to_remove
+        
+    def remove_by_name(self, name):
+        card_to_remove_index = [card.name for card in self.score_pile].index(name)
+        card_to_remove = self.score_pile.pop(card_to_remove_index)
+        self.score -= card_to_remove.age
+        self.update()
         return card_to_remove
     
     def get_filtered_score_pile(self, key):
         return [card for card in self.score_pile if key(card)]
-          
+        
+         

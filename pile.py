@@ -84,17 +84,26 @@ class Pile:
             if visibility[i] == 1 and symbol != 'FLAVOR':
                 self.symbol_count[symbols_dict[symbol]] -= 1
                 #self.owning_player.remove_symbol_from_count(symbol)
-    
+        self.owning_player.update_symbol_count()
+        
     def add_symbols_of_a_card(self, visibility, card_symbols):
         for i in range(4):
             symbol = card_symbols[i]
             if visibility[i] == 1 and symbol != 'FLAVOR':
                 self.symbol_count[symbols_dict[symbol]] += 1
                 #self.owning_player.add_symbol_to_count(symbol)
+        self.owning_player.update_symbol_count()
     
     def tuck(self, card):
-        self.add_symbols_of_a_card(self.get_visibility(), card.get_symbols())
-        self.pile.insert(0, card)
+        self.owning_player.number_of_tucked_cards_this_turn += 1
+        if len(self.pile) == 0:
+            print(self.owning_player.name + ' tucked: ' + card.name + ' to an empty pile and so it was melded instead.')
+            self.meld(card)
+        else:
+            self.add_symbols_of_a_card(self.get_visibility(), card.get_symbols())
+            self.pile.insert(0, card)        
+            print(self.owning_player.name + ' tucked: ' + card.name)
+            
 
     def meld(self, card):
         if len(self.pile) > 0:
@@ -105,26 +114,31 @@ class Pile:
         print ('\n'+card.name + ' Was melded.\n')
         
     def transfer_top_card(self):
-        ''' This method removes the top card of a pile. '''
+        ''' This method removes the top card of a pile or None if pile is empty. '''
         pile_size = len(self.pile)                                 
         if pile_size == 0:                                 # Check if pile is empty.
             return None
         else:                                              
             top_card = self.pile.pop()
+            self.owning_player.update_draw_age()           # We might need to update the draw age.
             pile_size -= 1        
             if pile_size == 0:                             # Check if we popped the last card
                 self.top_card = None
             else:
                 self.top_card == self.pile[pile_size-1]    # If not, update top card.
-            if pile_size == 1 and splay_mode != 'NONE':    # Check if the pile is now unplayed
-                self.change_splay_mode('NONE')         
+            if pile_size == 1 and self.splay_mode != 'NONE':    # Check if the pile is now unplayed
+                self.change_splay_mode('NONE') 
+                #print('{0}\'s {1} pile is now of size 1 and so is no longer splayed.'.format(self.owning_player.name, self.color)
+            print(top_card.name + ' was transferred from the top of the {0} pile!'.format(self.color))
             return top_card
             
     def transfer_bottom_card(self):
-        ''' This method removes the bottom card of a pile. '''
+        ''' This method removes the bottom card of a pile or None if pile is empty. '''
         pile_size == len(self.pile)                                 
         if pile_size == 0:                                 # Check if pile is empty.
             return None
+        elif pile_size == 1:
+            self.transfer_top_card()                       # Since in this case the bottom card is also top, and should be treated this way.
         else:                                              
             bottom_card = self.pile.pop(0)
             pile_size -= 1        
@@ -136,15 +150,21 @@ class Pile:
 
     def change_splay_mode(self, new_splay_mode):
         ''' This method should be called every time the splay_mode is changed. '''
+        new_splay_mode = new_splay_mode.upper()
         assert new_splay_mode in ('NONE', 'LEFT', 'RIGHT', 'UP'), 'Invalid Splay Mode'
         if (len(self.pile) < 2):
             print('Unable to splay ' + self.color + ' ' + new_splay_mode + ', less then 2 cards')
         else:
+            print('old visibility: ' + str(self.get_visibility()))
             self.splay_mode = new_splay_mode                                    # Change splay_mode
+            print('blablabla:')
+            self.print_self()
+            print('New visibility: ' + str(self.get_visibility()))
             self.symbol_count = [0,0,0,0,0,0]                                   # Reset symbol_count
             visibility = self.get_visibility()                                  # get (new) visibility.
             for i in range(len(self.pile) - 1):                                 # update all non-top cards symbols.
                 symbols = self.pile[i].get_symbols()
                 self.add_symbols_of_a_card(visibility, symbols)
             self.add_symbols_of_a_card((1,1,1,1), self.top_card.get_symbols())  # All the symbols of top_card are visible.
+            
             

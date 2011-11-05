@@ -12,24 +12,34 @@ class Game:
 
     def __init__(self):
 
+        self.available_special_achievements = { 'Monument', 'World', 'Empire', 'Wonder', 'Universe' }
+    
         # Initiallizing and shuffling the game deck.
         self.game_deck = deck.Deck()
         self.parser = deck_parser.DeckParser(self.game_deck)
         self.parser.parse()
         self.game_end = False
+        
+        # These three variables help us deal with dogmas.
         self.dogma_data = None
+        self.is_sharer = True        
+        self.something_happened = False
+        
+        # Shuffle along, nothing to see here.
         for i in range(10):
             #self.game_deck.shuffle(i)
             self.game_deck.deck[i].reverse()
+        
+        # Setting UI and checking for number of players
         self.ui = ui.UI(self)
         self.number_of_players = self.ui.choose_number_of_players()
         
-        
+        # Creating players.
         self.players = []
         for i in range(self.number_of_players):
             self.players.append(player.Player(self, self.ui))
         
-        
+        # This is needed to determine play order.
         def melded_card(player):
             for i in range(5):
                 if player.board[i].top_card != None: return player.board[i].get_top_card_reference().get_name()
@@ -62,11 +72,17 @@ class Game:
     def take_turn(self, player):
         self.take_action(player)
         self.take_action(player)
+        player.reset_scored_tucked_num()
 
     def invalid_option(self, player):
         print('Invalid choice, choose again')
         self.take_action(player)
-
+        
+    def reveal(self, age):
+        card_to_reveal = self.draw(age)
+        self.ui.reveal(card_to_reveal)
+        return card_to_reveal
+        
     def take_action(self, player):
         action = self.ui.get_player_action(player.get_name())
         if action == 1:
@@ -118,7 +134,7 @@ class Game:
         victims_names = []
         sharers = []
         sharers_names = []
-        for i in range(initiating_player_index + 1, initiating_player_index + self.number_of_players + 1):
+        for i in range(initiating_player_index + 1, initiating_player_index + self.number_of_players):
             real_i = self.circular_list_dict[i]
             symbol_count_of_player = symbol_count_snapshot[real_i][symbol_index]
             if symbol_count_of_player < symbol_count_of_initiating_player:
@@ -127,7 +143,7 @@ class Game:
             else:
                 sharers.append(self.players[real_i])
                 sharers_names.append(self.players[real_i].get_name())
-        
+
         
         print()
         print('Victims are: ' + str(victims_names))
@@ -147,13 +163,22 @@ class Game:
             if action_type == 'demand':
                 for player in victims:
                     action_func(player, initiating_player)
-            else: 
+            else:
+                execute_action = None
+                self.is_sharer = True
                 for player in sharers:
-
                     #TODO: This will have to be a msg to specific player later on.
                     if action_type == 'may': execute_action = self.ui.may(action_desc)                
-                    else: excecute_action = True
+                    else: execute_action = True
                     if execute_action: action_func(player)
+                self.is_sharer = False                
+                # In the end, the initiating_player also needs to execute.
+                if action_type == 'may': execute_action = self.ui.may(action_desc)                
+                else: execute_action = True
+                if execute_action: action_func(initiating_player)
+        if self.something_happened: initiating_player.draw_action()
+        self.something_happened = False     # Reset this variable after dogma phase is finished
+
                     
                 
             

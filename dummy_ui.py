@@ -18,6 +18,22 @@ class UI:
         self.root.title("Innovation")
         '''
 
+    def make_valid_choices_from_int(self, j):
+        '''Gets integer j and returns a set {1, 2, 3, ... , j}'''
+        valid_choices = set()
+        for i in range(j): valid_choices.add(i+1)
+        return valid_choices
+        
+    def reveal(self, card_to_reveal):
+        print('Revealing:')
+        card_to_reveal.print_self()
+        
+    def prompt(self, msg, valid_options):
+        return 1
+        
+    def str_prompt(self, msg, valid_options):
+        return '1'
+
     def choose_number_of_players(self):
         '''frame = Frame(self.root)
         frame.pack()
@@ -27,7 +43,7 @@ class UI:
             self.button.pack(side=LEFT)'''
             
         #number_of_players = prompt('Choose number of players (1-4): ', {1,2,3,4})      
-        number_of_players = 2 #dummy and victim
+        number_of_players = 3 # acting, victim and sharer
         
         return number_of_players
                
@@ -66,13 +82,25 @@ class UI:
             if top_card is not None: return i
     
     def choose_card_from_hand(self, hand_size):
-        return 1
+        return 0
         
     def choose_card_from_list(self, list):
         ''' This method prints the hand. '''
         assert len(list)>0 , 'list is empty'    
-        return list[0]
-
+        #return list[0]
+        return 0
+        
+    def choose_color_from_list(self, list):
+        if list == []: return None
+        return list[0]      
+        
+    def choose_player(self, list_of_players):
+        ''' This method recieves a list of players, takes a choice from current player and return a reference to the player chosen. A post condition is that list of players is not empty!'''
+        return list_of_players[0]
+        
+    def print_card_list(self, list):
+        ''' This method prints a card list. '''
+        assert len(list)>0 , 'list is empty'
         
     '''def make_assign_number_of_players(self, num):
         def assign_number_of_players():

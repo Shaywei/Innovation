@@ -1,10 +1,3 @@
 #TODO:
 
-Make UI interface that deals with all input / output.
-
-UNIT TESTING
-
-Implement the get_sharers/victim circular list thingy and the rest of the dogma execution mechanism.
-
-Implement dogmas!
-
+What happens if you choose meld action and have no cards in hand?

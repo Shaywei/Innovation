@@ -11,15 +11,21 @@ symbols_dict = {'CROWN' : 0, 'LEAF' : 1, 'LIGHTBULB' : 2, 'CASTLE' : 3 , 'FACTOR
 class Game:
 
     def __init__(self):
-
+        
+        self.available_special_achievements = { 'Monument', 'World', 'Empire', 'Wonder', 'Universe'}
+        
         # Initiallizing and shuffling the game deck.
         self.game_deck = deck.Deck()
         self.parser = deck_parser.DeckParser(self.game_deck)
         self.parser.parse()
         self.game_end = False
+        
+        # These two variables help us deal with dogmas.
         self.dogma_data = None
+        self.is_sharer = True
+        self.something_happened = False
+        
         for i in range(10):
-            #self.game_deck.shuffle(i)
             self.game_deck.deck[i].reverse()
             
         self.ui = dummy_ui.UI(self)
@@ -91,7 +97,12 @@ class Game:
             new_splay = input('Choose new splay mode for all your piles')        
             for i in range(5):
                 player.board[i].change_splay_mode(new_splay)
-            
+                
+    def reveal(self, age):
+        card_to_reveal = self.draw(age)
+        self.ui.reveal(card_to_reveal)
+        return card_to_reveal   
+        
     def play(self):
         while not self.game_end:
             for i in range(len(self.players)):
@@ -121,7 +132,7 @@ class Game:
         victims_names = []
         sharers = []
         sharers_names = []
-        for i in range(initiating_player_index + 1, initiating_player_index + self.number_of_players + 1):
+        for i in range(initiating_player_index + 1, initiating_player_index + self.number_of_players):
             real_i = self.circular_list_dict[i]
             symbol_count_of_player = symbol_count_snapshot[real_i][symbol_index]
             if symbol_count_of_player < symbol_count_of_initiating_player:
@@ -150,10 +161,14 @@ class Game:
             if action_type == 'demand':
                 for player in victims:
                     action_func(player, initiating_player)
-            else: 
+            else:
+                self.is_sharer = True
                 for player in sharers:
                     action_func(player)
-                    
+                self.is_sharer = False
+                action_func(initiating_player)
+        if self.something_happened: initiating_player.draw_action()
+        self.something_happened = False     # Reset this variable after dogma phase is finished                    
                 
             
             

@@ -111,19 +111,20 @@ Red. [Castle], [Castle], [Hexagon, a winding road], [Castle].
 [Castle]: Meld one or two cards from your hand. If you melded two, you may transfer your top red card to another players board. In exchange, transfer that players top green card to your board. 
 
 Age 3 
+
 Alchemy 
 Blue. [Hexagon, a mortar and pestle], [Leaf], [Castle], [Castle]. 
 [Castle]: Draw and reveal a 4 for every three [Castle] icons on your board. If any of the drawn cards are red, return the cards drawn and all cards in your hand. Otherwise, keep them. 
 [Castle]: Meld a card from your hand, then score a card from your hand. 
 
+Compass 
+Green. [Hexagon, a compass pointing either north or south], [Crown], [Crown], [Leaf]. 
+[Crown]: I demand you transfer a top non-green card with a [Leaf] from your board to my board, and then transfer a top card without a [Leaf] from my board to your board. 
+
 Education 
 Purple. [Lightbulb], [Lightbulb], [Lightbulb], [Hexagon, an apple]. 
 [Lightbulb]: You may return the highest card from your score pile. If you do, draw a card of value two 
 higher than the highest card remaining in your score pile. 
-
-Compass 
-Green. [Hexagon, a compass pointing either north or south], [Crown], [Crown], [Leaf]. 
-[Crown]: I demand you transfer a top non-green card with a [Leaf] from your board to my board, and then transfer a top card without a [Leaf] from my board to your board. 
 
 Engineering 
 Red. [Castle], [Hexagon: a fortified castle], [Lightbulb], [Castle]. 
