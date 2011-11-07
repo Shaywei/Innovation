@@ -1,4 +1,4 @@
-    
+
 colors_dict = {'RED' : 0, 'BLUE' : 1, 'YELLOW' : 2, 'PURPLE' : 3 , 'GREEN' : 4}
 color_numbers_dict = {0 : 'RED', 1 : 'BLUE' , 2 : 'YELLOW' , 3 : 'PURPLE' , 4 : 'GREEN'}
 all_colors = ['RED', 'BLUE', 'YELLOW' , 'PURPLE' , 'GREEN' ]
@@ -13,17 +13,17 @@ def claim_special_achievement(player, name):
 
 def print_names(list):
     print(str([card.name for card in list]))
-
+    
 def players_other_then_me(my_player):
     return [player for player in my_player.thegame.players if player.turn_order_place != my_player.turn_order_place]
-    
+
 def something_happened(my_player):
     ''' This function should be called whenever compensation draw action should be triggered.
         It already makes sure that my_player is a sharer and not initiating player.'''
     if my_player.thegame.is_sharer == True : my_player.thegame.something_happened = True
-    
+
 def choose_card_from_hand(my_player , key=lambda card: True):
-    ''' This method recieves a player and a key according which the player will have to choose a card from their hand. 
+    ''' This method recieves a player and a key according which the player will have to choose a card from their hand.
         The method pops the card from the palyer's hand and then returns the card.
         If no cards in hand satisfy conditions in key, returns None'''
     cards_to_choose_from = my_player.hand.get_filtered_hand(key)   # Make a list of all the card satisfying key conditions
@@ -33,7 +33,7 @@ def choose_card_from_hand(my_player , key=lambda card: True):
     return chosen_card
 
 def choose_card_from_top_cards(player_to_choose_from, choosing_player , key=lambda card: True):
-    ''' This method recieves two players and a key according which the choosing player will have to choose a card from their hand. 
+    ''' This method recieves two players and a key according which the choosing player will have to choose a card from their hand.
         The method pops the card from the player to choose from board (a top card) and then returns the card.
         If no cards in hand satisfy conditions in key, returns None'''
     cards_to_choose_from = []
@@ -45,11 +45,11 @@ def choose_card_from_top_cards(player_to_choose_from, choosing_player , key=lamb
     chosen_card_reference = choosing_player.choose_card_from_list(cards_to_choose_from) # Take player choice
     chosen_card = player_to_choose_from.board[colors_dict[chosen_card_reference.color]].transfer_top_card()
     return chosen_card
-    
 
-    
+
+
 def choose_color_from_list(my_player, key=lambda pile: True):
-    ''' This method recieves a player and a key according which the player will have to choose a pile of certain color. 
+    ''' This method recieves a player and a key according which the player will have to choose a pile of certain color.
         The method compiles a list according to the key and gets the choice from the player, returning string of said color.
         If no cards in hand satisfy conditions in key, returns None'''
     colors_to_choose_from = []
@@ -57,25 +57,25 @@ def choose_color_from_list(my_player, key=lambda pile: True):
         if key(my_player.board[i].pile): colors_to_choose_from.append(color_numbers_dict[i])
     if colors_to_choose_from == []: return None
     return my_player.choose_color_from_list(colors_to_choose_from)
-        
+
 def choose_card_from_score_pile(my_player , key=lambda card: True):
-    ''' This method recieves a player and a key according which the player will have to choose a card from their score pile. 
+    ''' This method recieves a player and a key according which the player will have to choose a card from their score pile.
         The method pops the card from the palyer's score pile and then returns the card.
         If no cards in hand satisfy conditions in key, returns None'''
     # Make a list of all the card satisfying key conditions
-    cards_to_choose_from = my_player.score_pile.get_filtered_score_pile(key)   
-    
+    cards_to_choose_from = my_player.score_pile.get_filtered_score_pile(key)
+
     if cards_to_choose_from == []: return None
-    
+
     chosen_card_reference = my_player.choose_card_from_list(cards_to_choose_from) # Take player choice
     chosen_card = my_player.score_pile.remove_by_name(chosen_card_reference.name)
-    return chosen_card    
+    return chosen_card
 
 def splay_color(my_player, color, splay_mode):
     ''' This method recieves a player, a color and a splay mode and if legal it splays
-        the pile of that color for that player to the new splay mode. 
+        the pile of that color for that player to the new splay mode.
         UPDATES SOMETHING HAPPNED!'''
-    if len(my_player.board[colors_dict[color]].pile) > 1: 
+    if len(my_player.board[colors_dict[color]].pile) > 1:
         my_player.board[colors_dict[color]].change_splay_mode(splay_mode)
         something_happened(my_player)
 
@@ -84,13 +84,13 @@ def splay_color_with_choice(my_player, colors, splay_mode):
         the pile of the color chosen fomr the list to the new splay mode. for said player.
         UPDATES SOMETHING HAPPNED!'''
     color_chosen = choose_color_from_list(my_player, lambda pile: len(pile) > 1 and pile[0].color in colors)
-    if color_chosen is not None: 
+    if color_chosen is not None:
         my_player.board[colors_dict[color_chosen]].change_splay_mode(splay_mode)
         something_happened(my_player)
-        
+
 def choose_up_to_n_cards_from_hand(my_player, n , key=lambda card: True):
-    ''' This method recieves a player, a number 'n' and a key. 
-        It allows the player to choose from his hand up to 'n' cards that satisfy condition in key. 
+    ''' This method recieves a player, a number 'n' and a key.
+        It allows the player to choose from his hand up to 'n' cards that satisfy condition in key.
         If 'n' is -1, there is no (practical) limit on the cards
         The method returns a list of all chosen cards or None if the list is empty.'''
     list_of_chosen_cards = []
@@ -100,7 +100,7 @@ def choose_up_to_n_cards_from_hand(my_player, n , key=lambda card: True):
     if n == -1: count = -200
     while cards_to_choose_from != [] and not done and count < n:\
         #TODO: GUI.
-        valid_choices = my_player.ui.make_valid_choices_from_int(len(cards_to_choose_from))            
+        valid_choices = my_player.ui.make_valid_choices_from_int(len(cards_to_choose_from))
         valid_choices = [str(num) for num in valid_choices]
         valid_choices.append('done')
         my_player.ui.print_card_list(cards_to_choose_from)
@@ -108,22 +108,29 @@ def choose_up_to_n_cards_from_hand(my_player, n , key=lambda card: True):
         if choice == 'done': done = True
         else:
             choice = int(choice) - 1
-            chosen_card = my_player.hand.remove_by_name(cards_to_choose_from[choice].name)        
+            chosen_card = my_player.hand.remove_by_name(cards_to_choose_from[choice].name)
             list_of_chosen_cards.append(chosen_card)
             count += 1
             cards_to_choose_from = my_player.hand.get_filtered_hand(key)
     return list_of_chosen_cards
-    
+
 def different_ages_in_list(list):
     return len(set([card.age for card in list]))
-    
-def draw_and_meld_a(my_player, age):
+
+def draw_and_meld_a(my_player, age, return_flag = False):
+    ''' This method is self explenatory except for the fact that you can call it with a True flag
+        and then it will return a reference for the draw card. This is useful for chekcing condition on the returned card.'''
     drawn_card = my_player.draw_card(age)
     my_player.meld_card(drawn_card)
+    if return_flag == True: return drawn_card
 
 def draw_and_tuck_a(my_player, age):
     drawn_card = my_player.draw_card(age)
-    my_player.tuck_card(drawn_card)  
+    my_player.tuck_card(drawn_card)
+
+def draw_and_score_a(my_player, age):
+    drawn_card = my_player.draw_card(age)
+    my_player.score_card_by_card(drawn_card)
 
 def agriculture0(my_player):
     print_names(my_player.hand.hand)
@@ -141,9 +148,9 @@ def agriculture0(my_player):
 def archery0(my_player , demanding_player):
     my_player.add_card_to_hand(my_player.draw_card(1))                      # Draw a 1
     max_age = my_player.hand.hand[len(my_player.hand.hand)-1].age           # Calculate max age
-    chosen_card = choose_card_from_hand(my_player , lambda card: card.age == max_age)    
+    chosen_card = choose_card_from_hand(my_player , lambda card: card.age == max_age)
     demanding_player.hand.add_to_hand(chosen_card)                               # Move the card to the demanding player's hand
-    
+
 def city_states0(my_player , demanding_player):
     if my_player.symbol_count[3] > 3:               # Has at least 4 castles on board.
         top_cards_with_castles = []
@@ -180,14 +187,14 @@ def clothing1(my_player):
         for player in players_other_then_me(my_player):
             if len(player.board[i].pile) != 0:
                 visibility_matrix[i] = 1
-        if visibility_matrix[i] == 0 and len(my_player.board[i].pile) != 0: 
+        if visibility_matrix[i] == 0 and len(my_player.board[i].pile) != 0:
             my_player.score_card_by_age(1)
             something_happened(my_player)
-        
+
 def code_of_laws0(my_player):
     cards_in_hand_of_same_color_as_a_color_on_board = []
     for i in range(5):
-        if len(my_player.board[i].pile) != 0: 
+        if len(my_player.board[i].pile) != 0:
             cards_in_hand_of_this_color = my_player.hand.get_filtered_hand(lambda card: card.color == color_numbers_dict[i])
             cards_in_hand_of_same_color_as_a_color_on_board.extend(cards_in_hand_of_this_color)
     if cards_in_hand_of_same_color_as_a_color_on_board != []:
@@ -197,12 +204,12 @@ def code_of_laws0(my_player):
         my_player.board[colors_dict[color]].tuck(chosen_card)
         my_player.board[colors_dict[color]].change_splay_mode('Left')
         something_happened(my_player)
-            
+
 def domestication0(my_player):
     something_happened(my_player)
     if my_player.hand.hand_size == 0:
         my_player.hand.add_to_hand(my_player.draw_card(1))
-    else: 
+    else:
         min_age = my_player.hand.hand[0].age           # Calculate min age
         chosen_card = choose_card_from_hand(my_player , lambda card: card.age == min_age)
         my_player.meld_card(chosen_card)
@@ -215,7 +222,7 @@ def masonry0(my_player):
         for card in cards_with_castles: my_player.meld_card(card)
         something_happened(my_player)
         if num_of_cards_chosen > 3: claim_special_achievement(my_player,'Monument')
-    
+
 def metalworking0(my_player):
     something_happened(my_player)
     exit_conditions = False
@@ -227,7 +234,7 @@ def metalworking0(my_player):
         else:
             my_player.add_card_to_hand(drawn_card)
             exit_conditions = True
-            
+
 def mysticism0(my_player):
     something_happened(my_player)
     drawn_card = my_player.draw_card(1)
@@ -240,21 +247,21 @@ def oars0(my_player , demanding_player):
     if chosen_card is not None:
         demanding_player.score_card_by_card(chosen_card)
         my_player.add_card_to_hand(my_player.draw_card(1))                      # Draw a 1
-        my_player.thegame.dogma_data = True # A card was transferred.            
+        my_player.thegame.dogma_data = True # A card was transferred.
 
 def oars1(my_player):
-    if my_player.thegame.dogma_data is None: 
+    if my_player.thegame.dogma_data is None:
         my_player.add_card_to_hand(my_player.draw_card(1)) # Draw a 1
         something_happened(my_player)
 
-def pottery0(my_player):   
+def pottery0(my_player):
     cards_to_return = choose_up_to_n_cards_from_hand(my_player, 3, lambda card: True)
     age_of_card_to_score = len(cards_to_return)
     if age_of_card_to_score != 0:
         for card in cards_to_return: my_player.return_card(card)
         my_player.score_card_by_age(age_of_card_to_score)
         something_happened(my_player)
-                
+
 def pottery1(my_player):
     my_player.add_card_to_hand(my_player.draw_card(1))
     something_happened(my_player)
@@ -279,8 +286,8 @@ def tools0(my_player):
         something_happened(my_player)
 
 def tools1(my_player):
-    chosen_card = choose_card_from_hand(my_player, lambda card: card.age == 3)    
-    if chosen_card is not None: 
+    chosen_card = choose_card_from_hand(my_player, lambda card: card.age == 3)
+    if chosen_card is not None:
         something_happened(my_player)
         my_player.return_card(chosen_card)
         for i in range(3):
@@ -292,8 +299,8 @@ def writing0(my_player):
 
 def calendar0(my_player):
     if len(my_player.score_pile.score_pile) > my_player.hand.hand_size:
-        my_player.draw_card_to_hand_by_age(3)
-        my_player.draw_card_to_hand_by_age(3)
+        my_player.draw_to_hand(3)
+        my_player.draw_to_hand(3)
         something_happened(my_player)
 
 def canal_building0(my_player):
@@ -312,7 +319,7 @@ def canal_building0(my_player):
         something_happened(my_player)
     for card_name in [card.name for card in cards_of_highest_age_in_score_pile]:
         card = my_player.score_pile.remove_by_name(card_name)
-        my_player.add_card_to_hand(card)    
+        my_player.add_card_to_hand(card)
         something_happened(my_player)
 
 def currency0(my_player):
@@ -330,15 +337,15 @@ def construction0(my_player , demanding_player):
 def construction1(my_player):
     num_of_top_cards = 0
     other_players_have_five_top_cards = False
-    for i in range(5): 
+    for i in range(5):
         if my_player.board[i].top_card is not None: num_of_top_cards += 1
     if num_of_top_cards == 5:
         for player in players_other_then_me(my_player):
             count = 0
-            for i in range(5): 
+            for i in range(5):
                 if player.board[i].top_card is not None: count += 1
             if count == 5: other_players_have_five_top_cards = True
-        if not other_players_have_five_top_cards: claim_special_achievement(my_player, 'Empire')    
+        if not other_players_have_five_top_cards: claim_special_achievement(my_player, 'Empire')
         something_happened(my_player)
 
 def fermenting0(my_player):
@@ -346,7 +353,7 @@ def fermenting0(my_player):
     num_of_leaves = my_player.symbol_count[1]
     num_of_cards_to_draw = num_of_leaves//2
     for i in range(num_of_cards_to_draw):
-        my_player.draw_card_to_hand_by_age(2)
+        my_player.draw_to_hand(2)
 
 def mapmaking0(my_player , demanding_player):
     chosen_card = choose_card_from_score_pile(my_player, lambda card: card.age == 1)
@@ -381,14 +388,14 @@ def monotheism0(my_player , demanding_player):
         top_card_to_transfer = my_player.board[colors_dict[color]].transfer_top_card()
         demanding_player.score_card_by_card(top_card_to_transfer)
         draw_and_tuck_a(my_player, 1)
-    
+
 def monotheism1(my_player):
     something_happened(my_player)
     draw_and_tuck_a(my_player, 1)
 
 def philosophy0(my_player):
     splay_color_with_choice(my_player, all_colors, 'LEFT')
-    
+
 def philosophy1(my_player):
     card_to_score = choose_card_from_hand(my_player)
     if card_to_score is not None:
@@ -402,16 +409,17 @@ def road_building0(my_player):
         cards_to_meld = []
         while cards_to_meld == []: cards_to_meld = choose_up_to_n_cards_from_hand(my_player, 2)
         for card in cards_to_meld: my_player.meld_card(card)
-        if len(cards_to_meld) == 2:    
-            chosen_player = my_player.choose_player_from_list(players_other_then_me(my_player))
+        if len(cards_to_meld) == 2:
+            chosen_player = my_player.choose_player_from_list(lambda player: player.turn_order_place != my_player.turn_order_place)
+            assert chosen_player is not None, 'No player was selcted, recieved None.'
             print (chosen_player.name.upper())
             chosen_player_top_green_card = chosen_player.board[4].transfer_top_card()
             if chosen_player_top_green_card is not None: my_player.meld_card(chosen_player_top_green_card)
             my_top_red_card = my_player.board[0].transfer_top_card()
             if my_top_red_card is not None: chosen_player.meld_card(my_top_red_card)
-            
+
 def alchemy0(my_player):
-    something_happened(my_player) 
+    something_happened(my_player)
     num_of_cards_to_reveal = my_player.symbol_count[3] // 3
     revealed_cards = []
     revealed_red = False
@@ -426,8 +434,8 @@ def alchemy0(my_player):
             my_player.thegame.return_card(my_player.hand.remove_by_index(i))
     else:
         for card in revealed_cards:
-            my_player.hand.add_to_hand(card)        
-    
+            my_player.hand.add_to_hand(card)
+
 def alchemy1(my_player):
     my_player.meld_action()
     my_player.score_card_from_hand()
@@ -437,15 +445,15 @@ def compass0(my_player , demanding_player):
     if victim_card_to_transfer is not None: demanding_player.meld_card(victim_card_to_transfer)
     demanding_player_card_to_transfer = choose_card_from_top_cards(demanding_player, my_player, lambda card: "LEAF" not in card.symbols)
     if demanding_player_card_to_transfer is not None: my_player.meld_card(demanding_player_card_to_transfer)
-    
+
 def education0(my_player):
     if len(my_player.score_pile.score_pile) > 0:
         card_to_return = choose_card_from_score_pile(my_player, lambda card: card.age == my_player.score_pile.max_age_in_score_pile)
         age_to_draw = my_player.score_pile.max_age_in_score_pile + 2
         my_player.thegame.return_card(card_to_return)
-        my_player.draw_card_to_hand_by_age(age_to_draw)
+        my_player.draw_to_hand(age_to_draw)
         something_happened(my_player)
-        
+
 
 def engineering0(my_player , demanding_player):
     for i in range(5):
@@ -460,7 +468,7 @@ def engineering1(my_player):
 def feudalism0(my_player , demanding_player):
     card_to_transfer = choose_card_from_hand(my_player, lambda card: 'CASTLE' in card.symbols)
     if card_to_transfer is not None: demanding_player.add_card_to_hand(card_to_transfer)
-        
+
 def feudalism1(my_player):
     splay_color_with_choice(my_player, ['YELLOW', 'PURPLE'], 'LEFT')
 
@@ -472,20 +480,37 @@ def machinery0(my_player , demanding_player):
         demanding_player.add_card_to_hand(card)
     for card in highest_cards:
         my_player.add_card_to_hand(card)
-        
+
 
 def machinery1(my_player):
     card_to_score = choose_card_from_hand(my_player, lambda card: 'CASTLE' in card.symbols)
     if card_to_score is not None:
         my_player.score_card_by_card(card_to_score)
-        something_happened(my_player)   
+        something_happened(my_player)
     splay_color(my_player, 'RED', 'LEFT')
 
 def medicine0(my_player , demanding_player):
-    pass
+    victim_highest_age = my_player.score_pile.max_age_in_score_pile
+    victim_card = choose_card_from_score_pile(my_player , key=lambda card: card.age == victim_highest_age)
+    demander_lowest_age = demanding_player.score_pile.min_age_in_score_pile
+    demander_card = choose_card_from_score_pile(demanding_player , key=lambda card: card.age == demander_lowest_age)
+    if victim_card is not None: demanding_player.score_card_by_card(victim_card)
+    if demander_card is not None: my_player.score_card_by_card(demander_card)
+
+
 
 def optics0(my_player):
-    pass
+    melded_card = draw_and_meld_a(my_player, 3,return_flag = True)
+    if 'CROWN' in melded_card.symbols: 
+        draw_and_score_a(my_player,4)
+    else:
+        lowest_score_for_other_players = min([player.score_pile.score for player in players_other_then_me(my_player)])
+        if my_player.score_pile.score > lowest_score_for_other_players:
+            player_to_move_to = my_player.choose_player_from_list(lambda player: player.turn_order_place != my_player.turn_order_place and player.score_pile.score == lowest_score_for_other_players)
+            if player_to_move_to is not None:
+                card_to_move = choose_card_from_score_pile(my_player)
+                player_to_move_to.score_card_by_card(card_to_move)
+    something_happened(my_player)
 
 def paper0(my_player):
     pass
