@@ -497,8 +497,6 @@ def medicine0(my_player , demanding_player):
     if victim_card is not None: demanding_player.score_card_by_card(victim_card)
     if demander_card is not None: my_player.score_card_by_card(demander_card)
 
-
-
 def optics0(my_player):
     melded_card = draw_and_meld_a(my_player, 3,return_flag = True)
     if 'CROWN' in melded_card.symbols: 
@@ -513,10 +511,15 @@ def optics0(my_player):
     something_happened(my_player)
 
 def paper0(my_player):
-    pass
+    splay_color_with_choice(my_player, ['BLUE', 'GREEN'], 'LEFT')
 
 def paper1(my_player):
-    pass
+    num_of_cards_to_draw = 0
+    for i in range(5): 
+        if my_player.board[i].splay_mode == 'LEFT': num_of_cards_to_draw += 1
+    for i in range(num_of_cards_to_draw):
+        my_player.draw_to_hand(4)
+    
 
 def translation0(my_player):
     pass

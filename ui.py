@@ -14,10 +14,11 @@ class UI:
     def __init__(self, thegame):
         self.thegame = thegame
         self.players = []
+        
         '''self.root = Tk()
         self.root.title("Innovation")
         '''
-
+        
     def make_valid_choices_from_int(self, j):
         '''Gets integer j and returns a set {1, 2, 3, ... , j}'''
         valid_choices = set()

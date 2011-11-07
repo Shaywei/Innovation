@@ -1,7 +1,5 @@
 
 
-    def test_paper(self):
-        self.private_setup('Paper',3)
 
     def test_translation(self):
         self.private_setup('Translation',3)

@@ -43,7 +43,15 @@ class Player:
             for card in cards.pile:
                 if card.name == name: return True
         return False
-    
+        
+    # For testing purpuses.
+    def number_melded_by_age(self, age):
+        count = 0
+        key = lambda card: card.age == age
+        for i in range(5):
+            count += len(self.board[i].get_filtered_pile(key))
+        return count
+        
     #TODO: something more serious 
     def check_for_victory(self):
         if self.achievements_number > 5: print('VICTORY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')

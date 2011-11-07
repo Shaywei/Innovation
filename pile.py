@@ -167,4 +167,8 @@ class Pile:
                 self.add_symbols_of_a_card(visibility, symbols)
             self.add_symbols_of_a_card((1,1,1,1), self.top_card.get_symbols())  # All the symbols of top_card are visible.
             
-            
+    def get_filtered_pile(self, key):
+        ''' Returns all cards that matches given criteria without removing from pile.
+            For testing purpuses only.'''
+        return [card for card in self.hand if key(card)]
+      

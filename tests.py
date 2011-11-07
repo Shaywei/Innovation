@@ -242,7 +242,12 @@ class TestDogmas(unittest.TestCase):
             if not player.check_if_melded(name): 
                 answer = False
                 problematic_name = name
-        self.assertTrue(answer, problematic_name + ' is not melded for ' + player.name)   
+        self.assertTrue(answer, problematic_name + ' is not melded for ' + player.name)
+        
+    def assert_melded_numbers(self, player, pairs):
+        for age,expected_number in pairs: 
+            actual_number = player.number_melded_by_age(age)
+            self.assertEqual(expected_number,actual_number, player.name + ' doesnt have '+str(expected_number)+ ' cards melded of age ' +str(age)+' but rather: ' + str(actual_number))
         
     def assert_not_melded(self, player, list_of_card_names):
         answer = True
@@ -309,7 +314,7 @@ class TestDogmas(unittest.TestCase):
             self.assert_highest_age_melded(player, age)
 
     # Tests Tests Tests !!!
-    
+    '''
     def test_agriculture(self):
         
         orginal_age5_deck_count = len(self.thegame.game_deck.deck[4])
@@ -1196,6 +1201,22 @@ class TestDogmas(unittest.TestCase):
         self.assert_score_by_list([(self.dummy_sharer, 1),(self.dummy_victim,1),(self.dummy_acting_player, 5)])
         self.assert_melded(self.dummy_sharer, ['Alchemy'])
         self.assert_melded(self.dummy_acting_player, ['Compass'])
+    ''' 
+    def test_paper(self):
+        
+        # Giving sharer symbols + piles to splay
+        self.meld_cards_by_list(self.dummy_sharer, [('Tools',1),('Writing',1),('Oars',1),('Archery',1),('The Wheel',1),('Sailing',1)])
+        
+        #Splaying red pile left.
+        self.dummy_sharer.board[0].change_splay_mode('LEFT')
+                
+        self.private_setup('Paper',3)
+        
+        self.assert_splay_mode_by_list([(self.dummy_acting_player, 'Blue', 'none'),(self.dummy_acting_player, 'red', 'none'),(self.dummy_acting_player, 'green', 'none'),(self.dummy_acting_player, 'purple', 'none'),(self.dummy_acting_player, 'yellow', 'none'),(self.dummy_sharer, 'Blue', 'left'),(self.dummy_sharer, 'red', 'left'),(self.dummy_sharer, 'green', 'none'),(self.dummy_sharer, 'purple', 'none'),(self.dummy_sharer, 'yellow', 'none'),(self.dummy_victim, 'Blue', 'none'),(self.dummy_victim, 'yellow', 'none'),(self.dummy_victim, 'green', 'none'),(self.dummy_victim, 'purple', 'none'),(self.dummy_victim, 'red', 'none'),])
+        
+        self.assert_hand_contains(self.dummy_sharer, ['Anatomy', 'Colonialism'])
+        self.assert_hand_size(self.dummy_sharer, 2)
+        self.assert_hand_size(self.dummy_acting_player, 1)
         
 parsing_suite = unittest.TestLoader().loadTestsFromTestCase(TestDeckParsing)
 dogma_suite = unittest.TestLoader().loadTestsFromTestCase(TestDogmas)

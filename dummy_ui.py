@@ -17,7 +17,25 @@ class UI:
         '''self.root = Tk()
         self.root.title("Innovation")
         '''
-
+        
+        # TODO: Use this
+        self.may_array = []
+        self.choice_array = []
+        self.choices_length_array = []
+        
+    # TODO: Use this
+    def set_arrays(self, may_array, choice_array, choices_length_array):
+        self.may_array = may_array
+        self.choice_array = choice_array
+        self.choices_length_array = choices_length_array
+    
+    def make_choice(self):
+        expected_num_of_choices = self.choices_length_array.pop(0)
+        actual_num_of_choices = len(valid_options)
+        assert actual_num_of_choices == expected_num_of_choices, 'Error with number of options for msg: ' + msg + '. Expected: ' + str(expected_num_of_choices) + ' actual: ' + str(actual_num_of_choices)
+        choice = self.choice_array.pop(0)
+        return choice
+  
     def make_valid_choices_from_int(self, j):
         '''Gets integer j and returns a set {1, 2, 3, ... , j}'''
         valid_choices = set()
@@ -27,11 +45,17 @@ class UI:
     def reveal(self, card_to_reveal):
         print('Revealing:')
         card_to_reveal.print_self()
-        
+    
     def prompt(self, msg, valid_options):
+        # TODO: Use this.    
+        '''choice = self.make_choice
+        return choice'''
         return 1
         
     def str_prompt(self, msg, valid_options):
+        # TODO: Use this.    
+        '''choice = self.make_choice
+        return str(choice)'''
         return '1'
 
     def choose_number_of_players(self):
@@ -56,27 +80,15 @@ class UI:
         #while name == '':
         #    name = input('Enter Player\'s name (must be non-empty):')
         return name 
-       
-    def get_red_color(self):
-        color = 0
-        return color
-    def get_blue_color(self):
-        color = 1
-        return color
-    def get_yellow_color(self):
-        color = 2
-        return color        
-    def get_purple_color(self):
-        color =3
-        return color        
-    def get_gree_color(self):
-        color = 4
-        return color        
-       
+              
     def may(self, action_desc):
-            return True
+        ''' assert len(self.may_array) > 0 , 'Making a \'may\' decision when no may answer avilable. action_desc: ' + action_desc
+        choice = self.may_array.pop(0)
+        return choice'''
+        return True
 
     def player_choose_top_card(self, player):
+        # TODO: Use this.
         for i in range(5): 
             top_card = player.get_top_card_reference_from_pile(i)
             if top_card is not None: return i
