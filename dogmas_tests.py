@@ -1,9 +1,4 @@
 
-    def test_medicine(self):
-        self.private_setup('Medicine',3)
-
-    def test_optics(self):
-        self.private_setup('Optics',3)
 
     def test_paper(self):
         self.private_setup('Paper',3)

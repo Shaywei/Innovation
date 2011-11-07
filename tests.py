@@ -309,7 +309,7 @@ class TestDogmas(unittest.TestCase):
             self.assert_highest_age_melded(player, age)
 
     # Tests Tests Tests !!!
-    '''
+    
     def test_agriculture(self):
         
         orginal_age5_deck_count = len(self.thegame.game_deck.deck[4])
@@ -1029,8 +1029,7 @@ class TestDogmas(unittest.TestCase):
         self.assert_melded(self.dummy_acting_player, ['Agriculture'])
         self.assert_melded(self.dummy_sharer, ['Measurement'])
         self.assert_not_melded(self.dummy_victim, ['Agriculture'])
-
-        
+      
     def test_compass2(self):
         
         # Victim should have to move Agriculture and take nothing. Sharer will move nothing.
@@ -1045,8 +1044,7 @@ class TestDogmas(unittest.TestCase):
         self.assert_melded(self.dummy_sharer, ['Archery'])
         self.assert_not_melded(self.dummy_victim, ['Agriculture'])
         self.assert_not_melded(self.dummy_acting_player, ['Archery','Metalworking'])
-
-        
+       
     def test_education(self):
         
         # Active should end up with 14 points, sharer with 0.
@@ -1081,7 +1079,7 @@ class TestDogmas(unittest.TestCase):
         self.assert_not_melded(self.dummy_victim, ['City States','Domestication','Tools'])
         self.assert_score(self.dummy_acting_player, 3)
         self.assert_splay_mode(self.dummy_acting_player, 'RED', 'LEFT')
-    '''
+    
     def test_feudalism(self):
 	
         # Giving shareres symbols
@@ -1104,7 +1102,6 @@ class TestDogmas(unittest.TestCase):
         self.assert_splay_mode(self.dummy_acting_player, 'Yellow', 'None')
         self.assert_hand_size(self.dummy_acting_player, 2)
         
-
     def test_machinery(self):
         
         # Giving shareres symbols
@@ -1139,10 +1136,66 @@ class TestDogmas(unittest.TestCase):
         self.assert_hand_not_contains(self.dummy_acting_player, ['Monotheism'])
         self.assert_score_pile_contains(self.dummy_acting_player, ['Monotheism'])
         self.assert_score(self.dummy_acting_player, 2)
+        
+    def test_medicine1(self):
+        # In this test both sharer and victim are victims.
+        
+        # Sharer should have 0 cards in his hand and one in his score pile.
+        self.score_cards_by_list(self.dummy_victim, [('Industrialization', 6),('Agriculture',1)])
+        
+        # Sharer should have 0 cards in his hand and one in his score pile.
+        self.score_cards_by_list(self.dummy_sharer, [('Specialization', 9),('Masonry',1)])
+        
+        self.private_setup('Medicine',3)
+    
+        self.assert_score_by_list([(self.dummy_sharer, 7),(self.dummy_victim,1),(self.dummy_acting_player, 9)])
+        
+    def test_medicine2(self):
+        # In this test both sharer and victim are victims.
+        
+        # Sharer should have 0 cards in his hand and one in his score pile.
+        self.score_cards_by_list(self.dummy_victim, [('Industrialization', 6),('Agriculture',1)])
+        
+        # Sharer should have 0 cards in his hand and one in his score pile.
+        self.score_cards_by_list(self.dummy_sharer, [('Specialization', 9),('Masonry',1)])
+        
+        # Sharer should have 0 cards in his hand and one in his score pile.
+        self.score_cards_by_list(self.dummy_acting_player, [('Gunpowder', 4),('Writing',1)])        
+        self.private_setup('Medicine',3)
+    
+        self.assert_score_by_list([(self.dummy_sharer, 5),(self.dummy_victim,2),(self.dummy_acting_player, 15)])
+        
+    def test_optics1(self):
+        # In this test sharer draws a card without a crown and then transfer 9 points to acting. Acting draws a card with a crown and scores a 4.
 
+        # Giving shareres symbols
+        self.meld_cards_by_list(self.dummy_sharer, [('Translation',3)])
         
+        # Sharer should have a card to transfer since he's not going to draw a card with a Crown.
+        self.score_cards_by_list(self.dummy_sharer, [('Specialization', 9)])
         
+        self.private_setup('Optics',3)
         
+        self.assert_score_by_list([(self.dummy_sharer, 0),(self.dummy_victim,0),(self.dummy_acting_player, 13 )])
+        self.assert_melded(self.dummy_sharer, ['Alchemy'])
+        self.assert_melded(self.dummy_acting_player, ['Compass'])
+        
+    def test_optics2(self):
+        # In this test sharer draws a card without a crown but doesn't transfer anything. Acting draws a card with a crown and scores a 4.
+
+        # Giving shareres symbols
+        self.meld_cards_by_list(self.dummy_sharer, [('Translation',3)])
+        
+        # Everyone should have the same points
+        self.score_cards_by_list(self.dummy_sharer, [('Agriculture', 1)])
+        self.score_cards_by_list(self.dummy_victim, [('Metalworking', 1)])
+        self.score_cards_by_list(self.dummy_acting_player, [('Masonry', 1)])
+        
+        self.private_setup('Optics',3)
+        
+        self.assert_score_by_list([(self.dummy_sharer, 1),(self.dummy_victim,1),(self.dummy_acting_player, 5)])
+        self.assert_melded(self.dummy_sharer, ['Alchemy'])
+        self.assert_melded(self.dummy_acting_player, ['Compass'])
         
 parsing_suite = unittest.TestLoader().loadTestsFromTestCase(TestDeckParsing)
 dogma_suite = unittest.TestLoader().loadTestsFromTestCase(TestDogmas)

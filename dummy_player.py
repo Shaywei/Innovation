@@ -124,8 +124,16 @@ class Player:
     def choose_color_from_list(self, list):  #returns a string of said color
         return  self.ui.choose_color_from_list(list)
                 
-    def choose_player_from_list(self, list):  #returns a player from the list.
-        return  self.ui.choose_player(list)
+    def choose_player_from_list(self, key = lambda player: True):  #returns a player from the list.
+        '''Args - key that checks condition on players
+           Return:
+           If more then one player answer conditions - choose.
+           If exactly one - return it
+           If no player - return None'''
+        list = [player for player in self.thegame.players if key(player)]
+        if len(list) > 1: return self.ui.choose_player(list)
+        elif len(list) == 1 : return list[0]
+        else: return None
                     
     def draw_action(self):
         '''This methood draws from where from is draw_age or age_i 'i' in [1-10]'''
@@ -142,7 +150,7 @@ class Player:
         print('{0}, you drew: {1}'.format(self.name, drawn_card.name))
         return drawn_card
      
-    def draw_card_to_hand_by_age(self, draw_age):
+    def draw_to_hand(self, draw_age):
         self.add_card_to_hand(self.draw_card(draw_age))
        
     def get_top_card_reference(self, pile_number):
