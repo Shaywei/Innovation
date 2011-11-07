@@ -522,10 +522,16 @@ def paper1(my_player):
     
 
 def translation0(my_player):
-    pass
+    score_pile = my_player.score_pile.pop_filtered_score_pile(lambda card: True)
+    for card in score_pile:
+        my_player.meld_card(card)
 
 def translation1(my_player):
-    pass
+    count = 0
+    for i in range(5):
+        top_card = my_player.board[i].top_card
+        if top_card is not None and 'CROWN' in top_card.symbols: count += 1
+    if count == 5: claim_special_achievement(my_player, 'World')
 
 def anatomy0(my_player , demanding_player):
     pass

@@ -1,9 +1,6 @@
 
 
 
-    def test_translation(self):
-        self.private_setup('Translation',3)
-
     def test_anatomy(self):
         self.private_setup('Anatomy',4)
 

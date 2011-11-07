@@ -71,5 +71,13 @@ class ScorePile:
     
     def get_filtered_score_pile(self, key):
         return [card for card in self.score_pile if key(card)]
+
+    def pop_filtered_score_pile(self, key):
+        '''Returns all cards that matches given criteria also removing them from hand'''
+        cards_to_return = []
+        for card in self.score_pile:
+                if key(card): cards_to_return.append(card)
+        for card in cards_to_return: self.remove_by_name(card.name)
+        return cards_to_return
         
          

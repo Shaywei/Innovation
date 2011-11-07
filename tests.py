@@ -1201,7 +1201,7 @@ class TestDogmas(unittest.TestCase):
         self.assert_score_by_list([(self.dummy_sharer, 1),(self.dummy_victim,1),(self.dummy_acting_player, 5)])
         self.assert_melded(self.dummy_sharer, ['Alchemy'])
         self.assert_melded(self.dummy_acting_player, ['Compass'])
-    ''' 
+     
     def test_paper(self):
         
         # Giving sharer symbols + piles to splay
@@ -1217,6 +1217,22 @@ class TestDogmas(unittest.TestCase):
         self.assert_hand_contains(self.dummy_sharer, ['Anatomy', 'Colonialism'])
         self.assert_hand_size(self.dummy_sharer, 2)
         self.assert_hand_size(self.dummy_acting_player, 1)
+     '''
+
+    def test_translation(self):
+
+        # Giving sharer symbols + piles to splay
+        self.meld_cards_by_list(self.dummy_sharer, [('Optics',3)])
+
+        self.score_cards_by_list(self.dummy_sharer, [('City States', 1),('Clothing', 1),('Domestication', 1),('Tools', 1)])
+        self.score_cards_by_list(self.dummy_acting_player, [('Oars', 1),('Canal Building', 2),('Sailing', 1),('Enterprise', 4)])
+        
+    
+        self.private_setup('Translation',3)
+        
+        self.assert_score_by_list([(self.dummy_sharer, 0),(self.dummy_victim,0),(self.dummy_acting_player, 0)])
+        self.assert_player_has_achievement(self.dummy_acting_player, 'World')
+        
         
 parsing_suite = unittest.TestLoader().loadTestsFromTestCase(TestDeckParsing)
 dogma_suite = unittest.TestLoader().loadTestsFromTestCase(TestDogmas)
