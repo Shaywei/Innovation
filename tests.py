@@ -1217,7 +1217,7 @@ class TestDogmas(unittest.TestCase):
         self.assert_hand_contains(self.dummy_sharer, ['Anatomy', 'Colonialism'])
         self.assert_hand_size(self.dummy_sharer, 2)
         self.assert_hand_size(self.dummy_acting_player, 1)
-     '''
+     
 
     def test_translation(self):
 
@@ -1232,7 +1232,30 @@ class TestDogmas(unittest.TestCase):
         
         self.assert_score_by_list([(self.dummy_sharer, 0),(self.dummy_victim,0),(self.dummy_acting_player, 0)])
         self.assert_player_has_achievement(self.dummy_acting_player, 'World')
+       
+    def test_anatomy1(self):
+        # In this dogma, sharer is a victim too. Sharer should only return Clothing and victim should return both Archery and City States.
+        self.meld_cards_by_list(self.dummy_sharer, [('Optics',3)])
+        self.meld_cards_by_list(self.dummy_victim, [('Archery',1)])
+        self.score_cards_by_list(self.dummy_sharer, [('Clothing', 1)])
+        self.score_cards_by_list(self.dummy_victim, [('City States', 1)])
         
+        self.private_setup('Anatomy',4)
+        
+        self.assert_score_by_list([(self.dummy_sharer, 0),(self.dummy_victim,0),(self.dummy_acting_player, 0)])
+        self.assert_melded(self.dummy_sharer, ['Optics'])
+        self.assert_not_melded(self.dummy_victim, ['Archery'])
+    '''
+    def test_anatomy2(self):
+        # In this dogma, sharer is a victim too. Sharer should only return Clothing and victim should return both Archery and City States.
+        self.meld_cards_by_list(self.dummy_victim, [('Archery',1)])
+        self.score_cards_by_list(self.dummy_sharer, [('Clothing', 1)])
+
+        
+        self.private_setup('Anatomy',4)
+        
+        self.assert_score_by_list([(self.dummy_sharer, 0),(self.dummy_victim,0),(self.dummy_acting_player, 0)])
+        self.assert_melded(self.dummy_victim, ['Archery'])        
         
 parsing_suite = unittest.TestLoader().loadTestsFromTestCase(TestDeckParsing)
 dogma_suite = unittest.TestLoader().loadTestsFromTestCase(TestDogmas)

@@ -46,8 +46,6 @@ def choose_card_from_top_cards(player_to_choose_from, choosing_player , key=lamb
     chosen_card = player_to_choose_from.board[colors_dict[chosen_card_reference.color]].transfer_top_card()
     return chosen_card
 
-
-
 def choose_color_from_list(my_player, key=lambda pile: True):
     ''' This method recieves a player and a key according which the player will have to choose a pile of certain color.
         The method compiles a list according to the key and gets the choice from the player, returning string of said color.
@@ -534,7 +532,14 @@ def translation1(my_player):
     if count == 5: claim_special_achievement(my_player, 'World')
 
 def anatomy0(my_player , demanding_player):
-    pass
+    card_to_return = choose_card_from_score_pile(my_player)
+    if card_to_return is not None:
+        age = card_to_return.get_age()
+        my_player.return_card(card_to_return)
+        top_card_to_return = choose_card_from_top_cards(my_player,my_player,lambda card: card.age == age)
+        if top_card_to_return is not None:
+            my_player.return_card(top_card_to_return)
+        
 
 def colonialism0(my_player):
     pass
