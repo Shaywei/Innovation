@@ -1,4 +1,4 @@
-# Teven - Tortured Dread Necromance 
+# Teven - A Tortured Soul. Illumian Necropolitan Dread Necromance.
 
 ### TODO
 * Finish Background story
