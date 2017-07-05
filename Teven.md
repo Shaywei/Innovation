@@ -1,5 +1,12 @@
 # Teven - Tortured Dread Necromance 
- 
+
+### TODO
+* Finish Background story
+* Finish feat selection
+* Add Cantrips class feature and choose them
+* Choose spells and add descritpion, at least for 0th and 1st level
+* Adjust spells per day with CHA bonus
+
 ## <a name="Background"></a> Background Story
  
 #### Genesis
@@ -51,7 +58,7 @@ The figure, is suddnely struck by a sudden clear memory of the dream she had tha
 A quick prayer for the Thanatos.  
 "Bring.. *that*.. with you." she sent to the fresh zombie, as they started making their way back through the dark night.
 
-#### The Middle years
+#### The Middle years [WIP]
 
 The first thing I remember is Teacher.  
 
@@ -67,7 +74,7 @@ I vividly remember the first lesson Teacher taught me.
 As I stepped into his room, he presented me with a present! The only one I ever got from him (at least of the physical nature)
 
 
-#### Prolog / A Begining
+#### Prolog / A Begining [TBD]
 
 
 
