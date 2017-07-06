@@ -1,11 +1,11 @@
 # Teven - A Tortured Soul. Illumian Necropolitan Dread Necromance.
 
 ### TODO
-* Finish Background story
 * Finish feat selection
 * Add Cantrips class feature and choose them
 * Choose spells and add descritpion, at least for 0th and 1st level
 * Adjust spells per day with CHA bonus
+* Fix typos
 
 ## <a name="Background"></a> Background Story
  
@@ -116,6 +116,9 @@ As Patches struggled and whined even more frantically, as if understanding, Teac
 "Don't be sad, for this was the dog's purpose all along. It will serve its purpose in Death and thus, this is not a sad event. In time, you will understand."  
 
 With that, and with a precise, quick, merciful movement, I gained the lack of vision I wished for only a moment too late, as a spray of warm blood covered my eyes.  
+  
+At that moment, the glowing sigil of "life" around my head dimmed and disappeared for the first time. Despite the horror of the moment, there was a part of me that noticed that and thought to itself "Huh. Interesting.".  
+Later, I would learn how to control my sigils by an act of will.  
 
 And then, I felt the chill again, like an old friend. Stronger than ever. Always.  
   
@@ -143,7 +146,76 @@ And here I am, now, 22 of age, ready to meet the world head on.
 
 #### Prolog / A Begining [TBD]
 
+Damn with this pitiful, weak flesh prison.  
+Here I am, growing ever stronger in The Art, already able to command real magic, not just simple cantrips, yet my body is dying.  
+For two and a half year I've been spying amongst enemies. Accumulating influence, trust and knowledge.  
+A master of disguise and an artful manipulator have I become.  
+Every now and then, I report back to the order.  
+On a rarer occasion I... intervene. Foiling a plot here, disposing of a liability there.  
+Now, this body has blew my cover! Instead of completing the spell that would sap my target's strength and leave them helpless, I succumbed to an abominable coughing fit, revealing me in my hidden location!  
+I had to flee.. and running did not help.  
+I collapsed just as I reached the safehouse.  
+The chill stronger than ever, I can feel my life escape my body.  
+This is it. The real thing. Thanatos, I am ready to accept your gift. My only regret is not completing the mission.  
 
+To my surprise, I hear Teacher's voice. What is he doing here?  
+I'm wavering between conciousness and darkness.  
+I hear Teacher say: "It is time.". Too weak to reply.  
+But you are right as always, wise Teacher, it is time.  
+You taught me well and I'm not scared. I'm proud to have been your student.  
+Again I hear the voice: "It's time for The Ritual".  
+What.. ritual?  
+
+***
+
+In a dark cave at an unmarked location a husk, dying body of a promising individual is being carried like a sack of potatoes.  
+It is being laid at the center of a circle formed of omnious looking symbols carved into the floor.  
+At strategic places it is outlined with candles and foul smelling incense and black sand.  
+The figure of Teacher kneels above the near-corpse, holding 5 metal stakes adorned with glowing, hissing runes.  
+He intones clearly and loudly, words of a language that should not be spoken by mortal beings and around him many other shadowy figures echo his words.  
+  
+As The Ritual reaches its climax, the dying young man opens his eyes as Teacher slams with full-force one of the stakes into the boy's arm.
+The body convulses as the soul, on the verge of escape, is being slammed back into the tortured flesh.  
+
+***
+
+Suddenly fully awake, I can feel the stakes pierce me. Another. Another. And another.  
+The sharp pain of the wounds is nothing compared to the pain of the dark magic that starts coursing through my veins, spreading decary and wreaks havoc.  
+An unimaginable wave of pain washes over me.  
+One final stake and I am crucified.  
+My blood is shed, slowly and softly flowing out of the wounds.  
+Every second is an eternity of pain. Too painful to scream, too painful to even lose conciousness again.  
+This is like feeling pain all the way through and popping at the other side.  
+My brief life flashes before me and I remember Patches.  
+Anger. Why won't you let me die?! I earned this! It is my reward!  
+Don't take this... away from me...  
+...  
+Why...  
+
+***
+
+An eternity of misery later, the pain loses it's edge, retreating.  
+Just like my body. Just like my life.  
+I can feel the end. No more pain. No more chill. No more anything.  
+I close my eyes and release my last breath.  
+  
+.....  
+....  
+...  
+..  
+.  
+  
+I open my eyes again.  
+The candles extinguished, the room is pitch dark, yet I can see perfectly.  
+  
+I..  
+I don't feel pain..  
+I don't feel the chill..  
+I don't even feel the urge to cough..  
+...  
+I don't feel anything..  
+..  
+And I never will.
 
 ********
 
