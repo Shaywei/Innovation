@@ -64,15 +64,82 @@ The first thing I remember is Teacher.
 
 Of course, there are earlier glimpses. Flashes of images.. whisps of emotions.. trifles.  
 
-I mainly remember Teacher feeding me himself, on all those (often) occasions I was mortally sick and bedridden, literally too weak to life a finger.  
+I remember Teacher feeding me himself, on all those (often) occasions I was mortally sick and bedridden, literally too weak to life a finger.  
 I remember the grim look of determination on Teacher's face, not really looking at me, but through me, as if staring into Death itself as they waged battle for a firmer grasp over me. 
 I remember Teacher mumbling: "Not yet."  
   
 And the chill, of course. I remember the ever-present chill. Like my very bones were made of ice, yet I still can't grow accustomed, can barely endure the it, often can't control the shivers.  
 
-I vividly remember the first lesson Teacher taught me.  
-As I stepped into his room, he presented me with a present! The only one I ever got from him (at least of the physical nature)
+I remember, vividly, the first lesson Teacher ever taught me.  
+The First Lesson. The begining of my training.  
 
+Teacher came into my room, beating the first rays of the sun by a few minutes.  
+Me, already awake, my bed made neatly but for a few bloodstains on the pillow from yet another night of coughing bouts, hard at my studies, pouring over a tome full of strange runes, trying to correctly pronounce their complicated names, contemplating their meanings.  
+The only light to guide my work is a single, birght sigil revolving around my head, "Hoon" (meaning, ironically, "life") - my sole inheritance and a constant reminder of abandonment.  
+Despite my frail physicallity, I excell in my studies and am first in my class, to the admiration of my classmates. Teacher says it's because of the easiness in which language comes to us Illumians.  
+  
+I remember my first lesson because it was marked by an extraordinary event.  
+As he stepped into my room, Teacher presented me with a present. The first I have ever gotten.  
+Teacher presented me with a puppy.  
+A mutt. A dingy, grey-spotted, shoddy-furred, dirty, panting, red tongued, black-snouted, rubbery-nosed mongrel.  
+He was Perfection itself.  
+In his usual stern voice Teacher commented: "Congratulations, Boy. We welcomed you into our fold six years ago today. This is your birthday present. It's time for you to learn responsibility. You'll take care of its needs and you'll be punished for its wrongdoings. Your training begins today, after breakfast."  
+
+I decided to make the most of my remaining free time until breakfast and I took Patches outside.  
+We ran in the fields outside the order's secret lair, we played, we bonded - an unconditinal love at first sight it was.  
+That perfect sunny day, it was almost as if I was healthy. I ran without wheezing too much, without caving to the coughs. I tumbled in the weeds without fits of allergy, without shivering from internal cold. That day, I was happy.  
+
+Night fell and I realized I time escaped me. With a rumbling stomach, I hastly got back and made my way to Teacher, profusly apologizing for missing my classes, swearing to make amends and to never repeat such failure.  
+Teacher, for his part, made a dismissing gesture and told me not to worry about it, that I was lucky and that something came up that will delay my training for a few days. That I'm free to spend my time as I see fit.  
+
+For the following three days, Patches and I were inseparatable.  
+His eager-to-lick tongue always brought a smile to my cracked lips when he frantically licked at them.  
+His cold, rubbery nose alwasy succeeded in driving the chill inside me with its moiset touch.  
+And so, it went on for three blissful days. Those were the last days of freedom from training, from chores and duties, from responsibility.  
+I'm thankful and fond for those days and I am accepting of the fact that they can never return.  
+
+On the third night, in my bed, on the verge of sleep, I was jerked into wakefullness as Teacher stepped into my room.  
+With a quick gesture and a word, I felt my muscles tense as if petrified, my bones locked in place.  
+I think Patches knew something was wrong, because he started whining, peering from under my bunk, conflicted between fear and his need to protect me.  
+Teacher grabbed Patches by the scruff of its neck, presenting him inches from face.  
+Deliberately and slowly unseathing his dagger, he locked his gaze with my tearing, wild open, unblinking eyes.  
+"Boy." he started, his voice devoid of all cruelty.  
+"This concludes the first and most important lesson of your training." he lectured.  
+"This lesson is meant to teach you about the meaningless of your existence. The falsehood of the value of life."  
+"Yours and mine and everyone around us, always. Life is weak. Pitiful. Fleeting."  
+"You especially, Boy, a broken husk of beaten body, clinging to the flame of life just barely, threatning to go out at any moment."  
+"You should make yourself stong and in the face of Death. You should be comfortable with Death and give Death the respect it is Due."  
+"When Death eventually comes, whatever form it takes, you should be happy."  
+"You should yearn for the moment you earn your peace, look forward for to the shadowy embrace of Death's wings."  
+"Death is the only Certainty in an uncertain existence. It comes to all things. It will come to me and to you. It will come to the gods and it will come to the world itself and even time itself. And right now, Boy, it will come to this creature here."  
+As Patches struggled and whined even more frantically, as if understanding, Teacher continued:  
+"Don't be sad, for this was the dog's purpose all along. It will serve its purpose in Death and thus, this is not a sad event. In time, you will understand."  
+
+With that, and with a precise, quick, merciful movement, I gained the lack of vision I wished for only a moment too late, as a spray of warm blood covered my eyes.  
+
+And then, I felt the chill again, like an old friend. Stronger than ever. Always.  
+  
+....  
+...  
+..  
+.  
+  
+Five years later, I was able to give release to my fifth dog myself, with my own hands.  
+I friendly ruffled my puppy's head before, so that he'll know I am doing him a favor and.. I think he understood.  
+Even the chill did not grow any stronger for it.  
+I felt no resentment towards Teacher, just admiration of his wisdom. Afterall, he has opened my eyes to the Truth.  
+
+By my 13th birthday, the Order recognized me for being extraordinary.  
+Despite being a weakling, supposedly an easy target for their bullying and mockery, I ruled most of them as king.  
+Every word I spoke to them, every made out story - they ate, and asked for more.  
+Most I could befriend, make loyal. Some I had to destroy make sure that everyone disliked. With the rest, I had the quiet understanding that we should keep away from one another for the most part.  
+Even some of the teachers couldn't resist liking me and I could take advanatage of and curry favor with (not Teacher though, of course) - a fact that despite all internal reason made the other kids like me even more.  
+
+So I was given special training. I would represent the Order in various matters, externally.  
+I would gain trust of key assets, dig out secrets, gain leverage, corrupt, extort, make likable. Get things Done.  
+My custom training seamlessly intertwined the art of manipulation with the Other Art.  
+
+And here I am, now, 22 of age, ready to meet the world head on.  
 
 #### Prolog / A Begining [TBD]
 
