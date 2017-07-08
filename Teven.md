@@ -7,6 +7,234 @@
 * Adjust spells per day with CHA bonus
 * Fix typos
 
+## <a name=""></a> A quick character sheet summary: 
+
+#### <a name=""></a> Teven.
+
+Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
+[Medium undead, augmented humanoid]
+
+**Ability Scores:** Str: 8, Dex:12 , Con: N/A, Wis: 12, Int: 12, Cha: 20, **AC/FF/Touch:** 17/14/13  
+**B.A.B:** +1, **Initiative:** +3 (+1 Dex, +2 Trait), **H.P:** 13 + 1d8+5  
+**Fort**: +5 (+0 base, +5 cha), **Ref**: +2 (+0 base, +1 dex +1 trait),  **Will**: +2 (+0 base, +1 wis +1 trait)  
+**Skills:** (Note: All Int/Wis/Cha gain +2 from sigils)
+* Bluff: +10 (+2 ranks, +3 C.C, +5 cha)
+* Disguise: +10 (+2 ranks, +3 C.C, +5 cha)
+* Diplomacy: +10 (+2 ranks, +3 C.C, +5 cha)
+* Perception: +9 (+2 ranks, +3 C.C, +1 wis +1 trait +2 sigils)
+* Use Magic Device: +9 (+1 ranks, +3 C.C, +5 cha)
+* Spellcraft: +7 (+1 ranks, +3 C.C, + 1 int +2 sigil)  
+
+**Feats:**  
+- [x] 1st lvl: [Fell Animate](http://archive.wizards.com/default.asp?x=dnd/ex/20041001a) (Metamagic [+2], creatures fell by the spell animate as per [animate dead](www.d20pfsrd.com/magic/all-spells/a/animate-dead/)) 
+- [x] 1st lvl (Dread Necro bonus): [Command Undead](http://www.d20pfsrd.com/feats/general-feats/command-undead-final/) (Standard action, enslave undead at 30ft radius, DC 15 + 1/2 Dread Necromancer level), enslavement as per [control undead spell](http://www.d20pfsrd.com/magic/all-spells/c/control-undead)
+<!---
+- [ ] 3rd lvl: [Corpsecrafter](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/corpsecrafter--432/index.html)
+- [ ] 5th lvl: [Explosive Retribution](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/destruction-retribution--591/index.html)
+- [ ] 7th lvl: [Metamagic School Focus (Necromancy)]
+- [ ] 9th lvl: [Profane Lifeleech]
+- [ ] 11th lvl: [Nimble Bones]
+- [ ] 13th lvl: [Black Lore of Moil]
+- [ ] 15th lvl:
+- [ ] 17th lvl:
+- [ ] 19th lvl:  
+-->
+### Equipment
+* Masterwork Studded leather   +3, 20lb, 0 ACP  
+* Spear 1d8, 6lb  
+* Shortbow (1d6, 2lb) arrows (20, 3lb)  
+  
+### Spells  
+#### 0th Level  
+* [Detect Magic](http://www.d20pfsrd.com/magic/all-spells/d/detect-magic/)  
+* [Touche of Fatigue](http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue
+) - Target save vs. fort or become fatigued for 1 round/lvl  
+* [Grave Words](http://paizo.com/pathfinderRPG/prd/occultAdventures/spells/graveWords.html) - Corpse talks, 10% to be useful.
+* 
+  
+#### 1st Level  
+* [Bane](http://www.d20pfsrd.com/magic/all-spells/b/bane/) - Enemies at 50ft radius save vs. will or take -1 on attack and saves  
+* [Bestow Wound](http://dnd.arkalseif.info/spells/heroes-of-horror--70/bestow-wound--1448/index.html) - Touch a living creature, if they fail Fort, they take 1 dmg / caster level and you as much  
+* [Cause Fear](http://www.d20pfsrd.com/magic/all-spells/c/cause-fear/) - Target in close range becomes frightened for 1d4 rounds or shaken for 1 round if they save vs will. 6HD or higher immune  
+* [Chill Touch](http://www.d20pfsrd.com/magic/all-spells/c/chill-touch/) - 1 touch / lvl does 1d6 neg. energy. If they fail fort they also take 1 str damage. Undead must save vs Will or become panicked for 1d4+1/lvl rounds  
+* [Detect Undead](http://www.d20pfsrd.com/magic/all-spells/d/detect-undead/)  
+* [Doom](http://www.d20pfsrd.com/magic/all-spells/d/doom/) - Target saves vs. will or become shaken  
+* [Hide from Undead](http://www.d20pfsrd.com/magic/all-spells/h/hide-from-undead/)  
+* [Inflict Light Wounds](http://www.d20pfsrd.com/magic/all-spells/i/inflict-light-wounds/) - 1d8+1/lvl neg. energy  
+* [Ray of Enfeeblement](http://www.d20pfsrd.com/magic/all-spells/r/ray-of-enfeeblement/) - Ray deals 1d6 +1/2lvls str, Fort for half  
+* [Undetectable Alignment](http://www.d20pfsrd.com/magic/all-spells/u/undetectable-alignment/) - 24h undetectable alignment. 
+* [Uniden's Curse](http://paizo.com/pathfinderRPG/prd/advancedRaceGuide/featuredRaces/undines.html#undine's-curse) - Target can't breath automatically, 1h/lvl, will negates  
+* [Decompose Corpse](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/decomposeCorpse.html#decompose-corpse) - Cropse to skeleton! (fort. negates)  
+* [Sculpt Corpse](http://paizo.com/pathfinderRPG/prd/advancedPlayersGuide/spells/sculptCorpse.html#sculpt-corpse-) - Make a corpse look like someone else  
+* [Ray of Sickening](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/rayOfSickening.html#ray-of-sickening
+) - Ray, save vs. fort or be sickened for 1min/lvl   
+* [Repair Undead](http://paizo.com/pathfinderRPG/prd/advancedClassGuide/spells/repairUndead.html) - Heal undead for 1d8 +1/lvl  
+* [Restore Corpse](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/restoreCorpse.html#restore-corpse) - Corpse grow flesh back (not fit for eating)  
+* [Interrogation](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/interrogation.html#interrogation) - Target save vs. fort or takes 1d4 + Wis modifier damage and suffer -4 bluff against you. 1 Question / 2 CL.  
+* [Persuasive Goad](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/persuasiveGoad.html#persuasive-goad) - Target save vs. fort or takes 1d6 nonleathel damage and you gain +4 intimidate against them.  
+*  
+<!---
+
+
+2nd level
+http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/spectralHand.html#spectral-hand
+
+http://paizo.com/pathfinderRPG/prd/advancedClassGuide/spells/unlivingRage.html
+
+http://paizo.com/pathetichfinderRPG/prd/ultimateMagic/spells/stealVoice.html#steal-voice
+
+http://paizo.com/pathfinderRPG/prd/advancedClassGuide/spells/strickenHeart.html
+
+http://paizo.com/pathfinderRPG/prd/advancedClassGuide/spells/lifePact.html
+
+http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/perniciousPoison.html#pernicious-poison
+
+http://paizo.com/pathfinderRPG/prd/advancedRaceGuide/featuredRaces/orcs.html#enemy's-heart
+
+http://paizo.com/pathfinderRPG/prd/advancedRaceGuide/featuredRaces/orcs.html#sentry-skull
+
+http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/falseLife.html#false-life
+
+http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/falseLife.html#false-life,-greater
+
+http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/fungalInfestation.html#fungal-infestation
+
+http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/gentleRepose.html#gentle-repose
+
+http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/ghoulTouch.html#ghoul-touch
+-->
+
+
+**Drawbacks:**  
+  * [Warded Against Nature](http://www.d20pfsrd.com/traits/drawbacks/warded-against-nature/) - Animals do not willingly come within 30ft of me (need DC 20 Handle Animal)
+  * [Zealous](http://www.d20pfsrd.com/traits/drawbacks/zealous/) - First attack against any recognized good diety follower is at -5 to hit +2 damage  
+
+**Traits:**
+  * [Reactionary](http://www.d20pfsrd.com/traits/combat-traits/reactionary/) - +2 initiative
+  * [Carefully Hidden](www.d20pfsrd.com/traits/race-traits/carefully-hidden-human/) - +1 on Will, +2 vs. divination
+  * [Unhappy Childhood](http://www.d20pfsrd.com/traits/campaign-traits/curse-of-the-crimson-throne/unhappy-childhood/) - +1 Ref save
+  * [Eyes and Ears of the City](http://www.d20pfsrd.com/traits/religion-traits/eyes-and-ears-of-the-city-god-of-commerce/) - +1 on Perception  
+  
+**Special Abilities:**  
+* Ilumian:
+  * Power Sigils - +2 on INT/WIS/CON checks and skills. 2/day use turn undead instead of paying metamagic cost.
+* Necropolitan
+  * Undead – all the immunities as described, darvision 60 ft, healed by negetive/harmed by positive energy, ect..
+  * Natural healing as a living create
+  * +2 on will save against command undead.
+* Dread Necromancer:
+  * Chanel Negative Energy 1d6, 8 times a day
+  * Charnal Touch – 1d8+1 negative energy damage, or heal 2 damage to undead.
+  * Lich Body – DR 2/ Bludgeoning
+* Spells:
+  * 1st level spells: 8 / day. 2nd level spells: 5/day. Spontaneous caster, see list above. DC 15 + spell level
+* Attacks:  
+  
+**Controlling Undead**  
+* From Fell Animate / Animate Dead : 4HD/level = a total of 8HD  
+* From Command Undead: HD/level = a total of 3HD  
+
+********
+#### [Woofie](http://www.d20pfsrd.com/bestiary/monster-listings/undead/zombie/zombie-fast/zombie-fast-wolf/
+)
+Zombie, Fast (Wolf)  
+  
+NE Medium undead  
+Init +3; Senses darkvision 60 ft.; Perception +0  
+  
+**DEFENSE**
+AC 15, touch 13, flat-footed 12 (+3 Dex, +2 natural)  
+hp 16 (3d8+3)  
+Fort +1, Ref +4, Will +3  
+Immune undead traits  
+  
+**OFFENSE**  
+Speed 60 ft.  
+Melee bite +4 (1d6+3 plus trip), slam +4 (1d6+3)  
+Special Attacks quick strikes  
+  
+**STATISTICS**  
+Str 15, Dex 17, Con —, Int —, Wis 10, Cha 10  
+Base Atk +2; CMB +4; CMD 17 (21 vs. trip)  
+Feats ToughnessB   
+  
+**SPECIAL ABILITIES**  
+Quick Strikes (Ex)  
+  
+Whenever a zombie wolf takes a full-attack action, it can make one additional slam attack at its highest base attack bonus.
+********
+## Feat Descriptions
+
+#### [Command Undead](http://www.d20pfsrd.com/feats/general-feats/command-undead-final/)
+  
+*Using foul powers of necromancy, you can command undead creatures, making them into your servants.*  
+  
+**Prerequisites:** Channel negative energy class feature.  
+  
+**Benefit:** As a standard action, you can use one of your uses of channel negative energy to enslave undead within 30 feet. Undead receive a Will save to negate the effect. The DC for this Will save is equal to 10 + 1/2 your cleric level + your Charisma modifier. Undead that fail their saves fall under your control, obeying your commands to the best of their ability, as if under the effects of control undead. Intelligent undead receive a new saving throw each day to resist your command. You can control any number of undead, so long as their total Hit Dice do not exceed your cleric level. If you use channel energy in this way, it has no other effect (it does not heal or harm nearby creatures). If an undead creature is under the control of another creature, you must make an opposed Charisma check whenever your orders conflict.
+
+
+#### [Corpsecrafter](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/corpsecrafter--432/index.html) [GENERAL]
+  
+*Undead you raise or create are tougher than normal.*  
+
+**Benefit:** Each undead you raise or create with any necromancy spell gains a +4 enhancement bonus to Strength and +2 hit points per Hit Die.
+
+#### [Destruction Retribution](http://marksworld.zeemer.com/files/feats/featlibrary/destructionretribution.html) [GENERAL]
+
+*Undead you raise or create harbor a retributive curse that is unleashed if they are destroyed.*  
+
+**Prerequisite:** Corpsecrafter.  
+
+**Benefit:** Each undead you raise or create with any necromancy spell releases a burst of negative energy upon its destruction, dealing 1d6 points of damage plus an additional 1d6 points per 2 Hit Dice to every creature within a 10-foot spread (Refl ex DC 15 half). This damage comes from negative energy, and it therefore heals undead creatures.
+
+#### [Fell Animate](http://dnd.arkalseif.info/dndtools/feats/libris-mortis-the-book-of-the-dead--71/fell-animate--1101/) [METAMAGIC]
+  
+*Living foes slain by your spell may rise as zombies.*  
+
+**Benefit:** You can alter a spell that deals damage to foes. Any living creature that could normally be raised as a zombie and that does not possess more than double your Hit Dice, when slain outright by a fell animated spell, rises as a zombie under your control at the beginning of your next action. Even if you kill several creatures with a single fell animated spell, you can’t create more Hit Dice of undead than twice your caster level. The standard rules for controlling undead (see animate dead, page 198 of the Player’s Handbook) apply to newly created undead gained through this metamagic feat. A fell animated spell uses up a spell slot three levels higher than the spell’s actual level.
+
+#### [Necromantic Presencse](http://www.realmshelps.net/charbuild/feat/Necromantic_Presence) [GENERAL]
+
+*Undead you control are harder to turn when they are near you.*  
+
+**Benefit:** Whenever undead you control are within 60 feet of you, they gain a +4 bonus to their turn resistance.
+
+#### [Necromantic Might](http://www.realmshelps.net/charbuild/feat/Necromantic_Might) [GENERAL]
+  
+**Undead you control gain benefits when they are near you.*  
+
+**Prerequisite:** Necromantic Presence.  
+
+**Benefit:** Whenever undead you control are within 60 feet of you, they are physically inspired by your necromantic aura, and gain a +2 enhancement bonus on their attack rolls and saving throws.
+
+*********
+ 
+## <a name=""></a> [Illumian](http://www.realmshelps.net/charbuild/races/other/illumian.shtml)
+* +2 Charisma / +2 Any - Adjustmet to PF
+* Humanoid (human): Illumians are humanoid creatures with the human subtype.
+* Medium: As Medium creatures, illumians have no special bonuses or penalties due to their size.
+* Illumian base land speed is 30 feet.
+ 
+* **Luminous Sigils (Su)**: The sigils that orbit an illumian’s head glow softly, providing illumination equal to that of a candle. Illumians can make their sigils disappear by concentrating for a moment (a standard action), but they don’t receive the sigils’ benefits and can’t use any special abilities granted by illumian words (see below) while they’re doused. Restoring the sigils to visibility is a free action.
+Luminous sigils (including power sigils; see below) are insubstantial and disappear into any matter they touch. An illumian’s sigils remain present and in effect even when the illumian takes another form, unless she would lose her supernatural abilities as a result of the form change. An illumian wizard who casts a polymorph spell on herself retains her sigils, but an illumian who becomes a zombie loses them.
+ 
+* **Glyphic Resonance (Ex):** Illumians are the physical embodiment of a magical language, so they interact strangely with symbol-based spells. This group includes all spells whose names contain the word glyph, rune, sigil, or symbol (such spells in the Player’s Handbook include explosive runes, glyph of warding, greater glyph of warding, sepia snake sigil, and the various symbol spells).
+When an illumian encounters such magic, one of two things happens: Either the illumian’s resonance overpowers the spell, or the foreign magic corrupts the mystical language that defines the illumian. Illumians have a –4 racial penalty on saving throws against these effects if their level is less than the caster level of the spell. If an illumian’s level equals or exceeds the spell’s caster level, she is immune to the effect.
+ 
+* Power Sigils (Su): In addition to the array of dimly glowing luminous sigils that orbits her head, a 1st-level illumian has a single brightly glowing power sigil that grants her certain bonuses (see below). A power sigil can be discerned from other sigils surrounding an illumian with a DC 10 Spot check, and identified with a DC 15 Knowledge (arcana) check. On attaining 2nd level in any class, an illumian gains a second different power sigil, and the bonus granted by each power sigil increases to +2. Depending on the combination of power sigils she chooses, an illumian gains one or more extra special abilities (see Illumian Words, below). The benefit of each power sigil is given below, along with the Common translation of each sigil’s llumian name.
+ 
+  * **Hoon (“life”):** +1 bonus on Wisdom checks, Constitution checks, and Wisdom- or Constitution-based skill checks.
+ 
+  * **Naen (“mind”):** +1 bonus on Intelligence checks and Intelligence-based skill checks.
+ 
+* **Illumian Words (Su):** Each combination of two power sigils’ names makes an Illumian word of great power, and thus grants extra abilities to a character who possesses those two power sigils. The benefit of each word of power is described below.
+ 
+  * **Naenhoon:** Twice per day, the illumian can spend one or more turn or rebuke undead attempts as a swift action to add a metamagic effect to a spell she is casting, with no effect on the spell’s casting time or effective level. She must have the metamagic feat whose effect she wants to apply. The illumian must expend a number of turn or rebuke undead attempts equal to the normal level adjustment of the metamagic feat (for example, it costs two turn or rebuke attempts to apply an Empower Spell effect). If she chooses to apply the Heighten Spell effect, it costs her one turn attempt per level that she heightens the spell, up to a maximum of 9th level.
+ 
+*********
+
+
 ## <a name="Background"></a> Background Story
  
 #### Genesis
@@ -218,135 +446,6 @@ I don't feel anything..
 And I never will.
 
 ********
-
-## <a name=""></a> A quick character sheet summary: 
-
-#### <a name=""></a> Teven.
-
-Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
-[Medium undead, augmented humanoid]
-
-**Ability Scores:** Str: 8, Dex:12 , Con: N/A, Wis: 12, Int: 12, Cha: 20, **AC/FF/Touch:** 17/14/13  
-**B.A.B:** +1, **Initiative:** +3 (+1 Dex, +2 Trait), **H.P:** 13 + 1d8+5  
-**Fort**: +5 (+0 base, +5 cha), **Ref**: +2 (+0 base, +1 dex +1 trait),  **Will**: +2 (+0 base, +1 wis +1 trait)  
-**Skills:** (Note: All Int/Wis/Cha gain +2 from sigils)
-* Bluff: +10 (+2 ranks, +3 C.C, +5 cha)
-* Disguise: +10 (+2 ranks, +3 C.C, +5 cha)
-* Diplomacy: +10 (+2 ranks, +3 C.C, +5 cha)
-* Perception: +9 (+2 ranks, +3 C.C, +1 wis +1 trait +2 sigils)
-* Use Magic Device: +9 (+1 ranks, +3 C.C, +5 cha)
-* Spellcraft: +7 (+1 ranks, +3 C.C, + 1 int +2 sigil)  
-
-**Feats:**  
-- [x] 1st lvl: [Fell Animate](http://archive.wizards.com/default.asp?x=dnd/ex/20041001a) (Metamagic [+2], 
-- [ ] 1st lvl (Dread Necro bonus): [Command Undead](http://www.d20pfsrd.com/feats/general-feats/command-undead-final/) (Standard action, enslave undead at 30ft radius, DC 15 + 1/2 Dread Necromancer level), enslavement as per [control undead spell](http://www.d20pfsrd.com/magic/all-spells/c/control-undead) 
-- [ ] 3rd lvl: Corpsecrafter,
-- [ ] 5th lvl: Explosive Retribution,
-- [ ] 7th lvl: Metamagic School Focus (Necromancy),
-- [ ] 9th lvl: Profane Lifeleech,
-- [ ] 11th lvl: Nimble Bones
-- [ ] 13th lvl: Black Lore of Moil
-- [ ] 15th lvl:
-- [ ] 17th lvl:
-- [ ] 19th lvl:  
-
-**Drawbacks:**  
-  * [Warded Against Nature](http://www.d20pfsrd.com/traits/drawbacks/warded-against-nature/) - Animals do not willingly come within 30ft of me (need DC 20 Handle Animal)
-  * [Zealous](http://www.d20pfsrd.com/traits/drawbacks/zealous/) - First attack against any recognized good diety follower is at -5 to hit +2 damage  
-
-**Traits:**
-  * [Reactionary](http://www.d20pfsrd.com/traits/combat-traits/reactionary/) - +2 initiative
-  * [Carefully Hidden](www.d20pfsrd.com/traits/race-traits/carefully-hidden-human/) - +1 on Will, +2 vs. divination
-  * [Unhappy Childhood](http://www.d20pfsrd.com/traits/campaign-traits/curse-of-the-crimson-throne/unhappy-childhood/) - +1 Ref save
-  * [Eyes and Ears of the City](http://www.d20pfsrd.com/traits/religion-traits/eyes-and-ears-of-the-city-god-of-commerce/) - +1 on Perception  
-  
-**Special Abilities:**  
-* Ilumian:
-  * Power Sigils - +2 on INT/WIS/CON checks and skills. 2/day use turn undead instead of paying metamagic cost.
-* Necropolitan
-  * Undead – all the immunities as described, darvision 60 ft, healed by negetive/harmed by positive energy, ect..
-  * Natural healing as a living create
-  * +2 on will save against command undead.
-* Dread Necromancer:
-  * Chanel Negative Energy 1d6, 8 times a day
-  * Charnal Touch – 1d8+1 negative energy damage, or heal 2 damage to undead.
-  * Lich Body – DR 2/ Bludgeoning
-* Spells:
-  * 1st level spells: 8 / day. 2nd level spells: 5/day. Spontaneous caster, see list above. DC 15 + spell level
-* Attacks:
-
-
-********
-## Feat Descriptions
-
-#### [Command Undead](http://www.d20pfsrd.com/feats/general-feats/command-undead-final/)
-  
-*Using foul powers of necromancy, you can command undead creatures, making them into your servants.*  
-  
-**Prerequisites:** Channel negative energy class feature.  
-  
-**Benefit:** As a standard action, you can use one of your uses of channel negative energy to enslave undead within 30 feet. Undead receive a Will save to negate the effect. The DC for this Will save is equal to 10 + 1/2 your cleric level + your Charisma modifier. Undead that fail their saves fall under your control, obeying your commands to the best of their ability, as if under the effects of control undead. Intelligent undead receive a new saving throw each day to resist your command. You can control any number of undead, so long as their total Hit Dice do not exceed your cleric level. If you use channel energy in this way, it has no other effect (it does not heal or harm nearby creatures). If an undead creature is under the control of another creature, you must make an opposed Charisma check whenever your orders conflict.
-
-
-#### [Corpsecrafter](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/corpsecrafter--432/index.html) [GENERAL]
-  
-*Undead you raise or create are tougher than normal.*  
-
-**Benefit:** Each undead you raise or create with any necromancy spell gains a +4 enhancement bonus to Strength and +2 hit points per Hit Die.
-
-#### [Destruction Retribution](http://marksworld.zeemer.com/files/feats/featlibrary/destructionretribution.html) [GENERAL]
-
-*Undead you raise or create harbor a retributive curse that is unleashed if they are destroyed.*  
-
-**Prerequisite:** Corpsecrafter.  
-
-**Benefit:** Each undead you raise or create with any necromancy spell releases a burst of negative energy upon its destruction, dealing 1d6 points of damage plus an additional 1d6 points per 2 Hit Dice to every creature within a 10-foot spread (Refl ex DC 15 half). This damage comes from negative energy, and it therefore heals undead creatures.
-
-#### [Fell Animate](http://dnd.arkalseif.info/dndtools/feats/libris-mortis-the-book-of-the-dead--71/fell-animate--1101/) [METAMAGIC]
-  
-*Living foes slain by your spell may rise as zombies.*  
-
-**Benefit:** You can alter a spell that deals damage to foes. Any living creature that could normally be raised as a zombie and that does not possess more than double your Hit Dice, when slain outright by a fell animated spell, rises as a zombie under your control at the beginning of your next action. Even if you kill several creatures with a single fell animated spell, you can’t create more Hit Dice of undead than twice your caster level. The standard rules for controlling undead (see animate dead, page 198 of the Player’s Handbook) apply to newly created undead gained through this metamagic feat. A fell animated spell uses up a spell slot three levels higher than the spell’s actual level.
-
-#### [Necromantic Presencse](http://www.realmshelps.net/charbuild/feat/Necromantic_Presence) [GENERAL]
-
-*Undead you control are harder to turn when they are near you.*  
-
-**Benefit:** Whenever undead you control are within 60 feet of you, they gain a +4 bonus to their turn resistance.
-
-#### [Necromantic Might](http://www.realmshelps.net/charbuild/feat/Necromantic_Might) [GENERAL]
-  
-**Undead you control gain benefits when they are near you.*  
-
-**Prerequisite:** Necromantic Presence.  
-
-**Benefit:** Whenever undead you control are within 60 feet of you, they are physically inspired by your necromantic aura, and gain a +2 enhancement bonus on their attack rolls and saving throws.
-
-*********
- 
-## <a name=""></a> [Illumian](http://www.realmshelps.net/charbuild/races/other/illumian.shtml)
-* +2 Charisma / +2 Any - Adjustmet to PF
-* Humanoid (human): Illumians are humanoid creatures with the human subtype.
-* Medium: As Medium creatures, illumians have no special bonuses or penalties due to their size.
-* Illumian base land speed is 30 feet.
- 
-* **Luminous Sigils (Su)**: The sigils that orbit an illumian’s head glow softly, providing illumination equal to that of a candle. Illumians can make their sigils disappear by concentrating for a moment (a standard action), but they don’t receive the sigils’ benefits and can’t use any special abilities granted by illumian words (see below) while they’re doused. Restoring the sigils to visibility is a free action.
-Luminous sigils (including power sigils; see below) are insubstantial and disappear into any matter they touch. An illumian’s sigils remain present and in effect even when the illumian takes another form, unless she would lose her supernatural abilities as a result of the form change. An illumian wizard who casts a polymorph spell on herself retains her sigils, but an illumian who becomes a zombie loses them.
- 
-* **Glyphic Resonance (Ex):** Illumians are the physical embodiment of a magical language, so they interact strangely with symbol-based spells. This group includes all spells whose names contain the word glyph, rune, sigil, or symbol (such spells in the Player’s Handbook include explosive runes, glyph of warding, greater glyph of warding, sepia snake sigil, and the various symbol spells).
-When an illumian encounters such magic, one of two things happens: Either the illumian’s resonance overpowers the spell, or the foreign magic corrupts the mystical language that defines the illumian. Illumians have a –4 racial penalty on saving throws against these effects if their level is less than the caster level of the spell. If an illumian’s level equals or exceeds the spell’s caster level, she is immune to the effect.
- 
-* Power Sigils (Su): In addition to the array of dimly glowing luminous sigils that orbits her head, a 1st-level illumian has a single brightly glowing power sigil that grants her certain bonuses (see below). A power sigil can be discerned from other sigils surrounding an illumian with a DC 10 Spot check, and identified with a DC 15 Knowledge (arcana) check. On attaining 2nd level in any class, an illumian gains a second different power sigil, and the bonus granted by each power sigil increases to +2. Depending on the combination of power sigils she chooses, an illumian gains one or more extra special abilities (see Illumian Words, below). The benefit of each power sigil is given below, along with the Common translation of each sigil’s llumian name.
- 
-  * **Hoon (“life”):** +1 bonus on Wisdom checks, Constitution checks, and Wisdom- or Constitution-based skill checks.
- 
-  * **Naen (“mind”):** +1 bonus on Intelligence checks and Intelligence-based skill checks.
- 
-* **Illumian Words (Su):** Each combination of two power sigils’ names makes an Illumian word of great power, and thus grants extra abilities to a character who possesses those two power sigils. The benefit of each word of power is described below.
- 
-  * **Naenhoon:** Twice per day, the illumian can spend one or more turn or rebuke undead attempts as a swift action to add a metamagic effect to a spell she is casting, with no effect on the spell’s casting time or effective level. She must have the metamagic feat whose effect she wants to apply. The illumian must expend a number of turn or rebuke undead attempts equal to the normal level adjustment of the metamagic feat (for example, it costs two turn or rebuke attempts to apply an Empower Spell effect). If she chooses to apply the Heighten Spell effect, it costs her one turn attempt per level that she heightens the spell, up to a maximum of 9th level.
- 
-*********
  
 ## <a name=""></a> [Dread Necromancer](http://dnd.arkalseif.info/classes/dread-necromancer/index.html)
 *“Necromancy is not just one school of magic among many. It is an Art, one that requires the Artist’s entire devotion.”*
