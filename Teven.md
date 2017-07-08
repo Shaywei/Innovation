@@ -1,9 +1,6 @@
 # Teven - A Tortured Soul. Illumian Necropolitan Dread Necromance.
 
 ### TODO
-* Finish feat selection
-* Add Cantrips class feature and choose them
-* Choose spells and add descritpion, at least for 0th and 1st level
 * Adjust spells per day with CHA bonus
 * Fix typos
 
@@ -44,15 +41,20 @@ Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
 * Spear 1d8, 6lb  
 * Shortbow (1d6, 2lb) arrows (20, 3lb)  
   
-### Spells  
+### Spells (DC 15 + spell level)
+
+<!----2nd level spells: 5/day.--->
+
 #### 0th Level  
 * [Detect Magic](http://www.d20pfsrd.com/magic/all-spells/d/detect-magic/)  
-* [Touche of Fatigue](http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue
+* [Touche of Fatigue](http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue  
 ) - Target save vs. fort or become fatigued for 1 round/lvl  
-* [Grave Words](http://paizo.com/pathfinderRPG/prd/occultAdventures/spells/graveWords.html) - Corpse talks, 10% to be useful.
-* 
+* [Grave Words](http://paizo.com/pathfinderRPG/prd/occultAdventures/spells/graveWords.html) - Corpse talks, 10% to be useful  
+* [Bleed](http://www.dxcontent.com/SDB_SpellBlock.asp?SDBID=45) - Cause a stabilized creature to resume dying  
+* [Disrupt Undead](http://www.dxcontent.com/SDB_SpellBlock.asp?SDBID=163) - Deals 1d6 damage to one undead  
+* [Sotto Voice](http://www.dxcontent.com/SDB_SpellBlock.asp?SDBID=658) - Save vs. Will or be Shaken for 1 round.
   
-#### 1st Level  
+#### 1st Level  (8/day)
 * [Bane](http://www.d20pfsrd.com/magic/all-spells/b/bane/) - Enemies at 50ft radius save vs. will or take -1 on attack and saves  
 * [Bestow Wound](http://dnd.arkalseif.info/spells/heroes-of-horror--70/bestow-wound--1448/index.html) - Touch a living creature, if they fail Fort, they take 1 dmg / caster level and you as much  
 * [Cause Fear](http://www.d20pfsrd.com/magic/all-spells/c/cause-fear/) - Target in close range becomes frightened for 1d4 rounds or shaken for 1 round if they save vs will. 6HD or higher immune  
@@ -126,10 +128,7 @@ http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/ghoulTouch.html#ghoul-tou
   * Chanel Negative Energy 1d6, 8 times a day
   * Charnal Touch – 1d8+1 negative energy damage, or heal 2 damage to undead.
   * Lich Body – DR 2/ Bludgeoning
-* Spells:
-  * 1st level spells: 8 / day. 2nd level spells: 5/day. Spontaneous caster, see list above. DC 15 + spell level
-* Attacks:  
-  
+    
 **Controlling Undead**  
 * From Fell Animate / Animate Dead : 4HD/level = a total of 8HD  
 * From Command Undead: HD/level = a total of 3HD  
