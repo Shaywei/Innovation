@@ -12,7 +12,7 @@ Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
 [Medium undead, augmented humanoid]
 
 **Ability Scores:** Str: 8, Dex:12 , Con: N/A, Wis: 12, Int: 12, Cha: 20, **AC/FF/Touch:** 17/14/13  
-**B.A.B:** +1, **Initiative:** +3 (+1 Dex, +2 Trait), **H.P:** 13 + 1d8+5  
+**B.A.B:** +1, **Initiative:** +3 (+1 Dex, +2 Trait), **H.P:** 26  
 **Fort**: +5 (+0 base, +5 cha), **Ref**: +2 (+0 base, +1 dex +1 trait),  **Will**: +2 (+0 base, +1 wis +1 trait)  
 **Skills:** (Note: All Int/Wis/Cha gain +2 from sigils)
 * Bluff: +10 (+2 ranks, +3 C.C, +5 cha)
@@ -21,7 +21,28 @@ Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
 * Perception: +9 (+2 ranks, +3 C.C, +1 wis +1 trait +2 sigils)
 * Use Magic Device: +9 (+1 ranks, +3 C.C, +5 cha)
 * Spellcraft: +7 (+1 ranks, +3 C.C, + 1 int +2 sigil)  
-
+  
+**Attacks**  
+Shortbow: +2 1d6-1, spear: +0 1d8-1  
+  
+**[Woofie](http://www.d20pfsrd.com/bestiary/monster-listings/undead/zombie/zombie-fast/zombie-fast-wolf/)**  
+Speed 60 ft, init +3; Senses darkvision 60 ft.; Perception +0, Immune undead traits  
+AC 15, touch 13, flat-footed 12 (+3 Dex, +2 natural)    
+hp 27, Fort +1, Ref +4, Will +3  
+Melee bite +4 (1d6+3 plus trip), slam +4 (1d6+3)  
+  
+**Special Abilities:**  
+* Ilumian:
+  * Power Sigils - +2 on INT/WIS/CON checks and skills. 2/day use turn undead instead of paying metamagic cost.
+* Necropolitan
+  * Undead – all the immunities as described, darvision 60 ft, healed by negetive/harmed by positive energy, ect..
+  * Natural healing as a living create
+  * +2 on will save against command undead.
+* Dread Necromancer:
+  * Chanel Negative Energy 1d6, 8 times a day
+  * Charnal Touch – 1d8+1 negative energy damage, or heal 2 damage to undead.
+  * Lich Body – DR 2/ Bludgeoning
+  
 **Feats:**  
 - [x] 1st lvl: [Fell Animate](http://archive.wizards.com/default.asp?x=dnd/ex/20041001a) (Metamagic [+2], creatures fell by the spell animate as per [animate dead](www.d20pfsrd.com/magic/all-spells/a/animate-dead/)) 
 - [x] 1st lvl (Dread Necro bonus): [Command Undead](http://www.d20pfsrd.com/feats/general-feats/command-undead-final/) (Standard action, enslave undead at 30ft radius, DC 15 + 1/2 Dread Necromancer level), enslavement as per [control undead spell](http://www.d20pfsrd.com/magic/all-spells/c/control-undead)
@@ -37,9 +58,7 @@ Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
 - [ ] 19th lvl:  
 -->
 ### Equipment
-* Masterwork Studded leather   +3, 20lb, 0 ACP  
-* Spear 1d8, 6lb  
-* Shortbow (1d6, 2lb) arrows (20, 3lb)  
+Masterwork Studded leather   +3, 20lb, 0 ACP, Spear 1d8, 6lb, Shortbow (1d6, 2lb) arrows (20, 3lb)  
   
 ### Spells (DC 15 + spell level)
 
@@ -116,26 +135,13 @@ http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/ghoulTouch.html#ghoul-tou
   * [Carefully Hidden](www.d20pfsrd.com/traits/race-traits/carefully-hidden-human/) - +1 on Will, +2 vs. divination
   * [Unhappy Childhood](http://www.d20pfsrd.com/traits/campaign-traits/curse-of-the-crimson-throne/unhappy-childhood/) - +1 Ref save
   * [Eyes and Ears of the City](http://www.d20pfsrd.com/traits/religion-traits/eyes-and-ears-of-the-city-god-of-commerce/) - +1 on Perception  
-  
-**Special Abilities:**  
-* Ilumian:
-  * Power Sigils - +2 on INT/WIS/CON checks and skills. 2/day use turn undead instead of paying metamagic cost.
-* Necropolitan
-  * Undead – all the immunities as described, darvision 60 ft, healed by negetive/harmed by positive energy, ect..
-  * Natural healing as a living create
-  * +2 on will save against command undead.
-* Dread Necromancer:
-  * Chanel Negative Energy 1d6, 8 times a day
-  * Charnal Touch – 1d8+1 negative energy damage, or heal 2 damage to undead.
-  * Lich Body – DR 2/ Bludgeoning
-    
+      
 **Controlling Undead**  
 * From Fell Animate / Animate Dead : 4HD/level = a total of 8HD  
 * From Command Undead: HD/level = a total of 3HD  
 
 ********
-#### [Woofie](http://www.d20pfsrd.com/bestiary/monster-listings/undead/zombie/zombie-fast/zombie-fast-wolf/
-)
+#### [Woofie](http://www.d20pfsrd.com/bestiary/monster-listings/undead/zombie/zombie-fast/zombie-fast-wolf/)
 Zombie, Fast (Wolf)  
   
 NE Medium undead  
@@ -143,7 +149,7 @@ Init +3; Senses darkvision 60 ft.; Perception +0
   
 **DEFENSE**
 AC 15, touch 13, flat-footed 12 (+3 Dex, +2 natural)  
-hp 16 (3d8+3)  
+hp 27 (3d8+3)  
 Fort +1, Ref +4, Will +3  
 Immune undead traits  
   
