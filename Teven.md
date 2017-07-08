@@ -11,6 +11,12 @@
 Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
 [Medium undead, augmented humanoid]
 
+**Desription**  
+Human, 5''9, wearing green hooded robe over a studded leather armor. Can tell that he's not buffed.  
+Non-descript features, but very handsome, something likable and charming about him.  
+Backpack with lots of pockets with bedroll, spear, shortbow, quiver.  
+Wolf - large
+
 **Ability Scores:** Str: 8, Dex:12 , Con: N/A, Wis: 12, Int: 12, Cha: 20, **AC/FF/Touch:** 17/14/13  
 **B.A.B:** +1, **Initiative:** +3 (+1 Dex, +2 Trait), **H.P:** 26  
 **Fort**: +5 (+0 base, +5 cha), **Ref**: +2 (+0 base, +1 dex +1 trait),  **Will**: +2 (+0 base, +1 wis +1 trait)  
