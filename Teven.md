@@ -1,9 +1,5 @@
 # Teven - A Tortured Soul. Illumian Necropolitan Dread Necromance.
 
-### TODO
-* Adjust spells per day with CHA bonus
-* Fix typos
-
 ## <a name=""></a> A quick character sheet summary: 
 
 #### <a name=""></a> Teven.
@@ -65,7 +61,22 @@ Melee bite +4 (1d6+3 plus trip), slam +4 (1d6+3)
 -->
 ### Equipment
 Masterwork Studded leather   +3, 20lb, 0 ACP, Spear 1d8, 6lb, Shortbow (1d6, 2lb) arrows (20, 3lb)  
-  
+
+**Drawbacks:**  
+  * [Warded Against Nature](http://www.d20pfsrd.com/traits/drawbacks/warded-against-nature/) - Animals do not willingly come within 30ft of me (need DC 20 Handle Animal)
+  * [Zealous](http://www.d20pfsrd.com/traits/drawbacks/zealous/) - First attack against any recognized good diety follower is at -5 to hit +2 damage  
+
+**Traits:**
+  * [Reactionary](http://www.d20pfsrd.com/traits/combat-traits/reactionary/) - +2 initiative
+  * [Carefully Hidden](www.d20pfsrd.com/traits/race-traits/carefully-hidden-human/) - +1 on Will, +2 vs. divination
+  * [Unhappy Childhood](http://www.d20pfsrd.com/traits/campaign-traits/curse-of-the-crimson-throne/unhappy-childhood/) - +1 Ref save
+  * [Eyes and Ears of the City](http://www.d20pfsrd.com/traits/religion-traits/eyes-and-ears-of-the-city-god-of-commerce/) - +1 on Perception  
+      
+**Controlling Undead**  
+* From Fell Animate / Animate Dead : 4HD/level = a total of 8HD  
+* From Command Undead: HD/level = a total of 3HD  
+**********************
+
 ### Spells (DC 15 + spell level)
 
 <!----2nd level spells: 5/day.--->
@@ -99,9 +110,9 @@ Masterwork Studded leather   +3, 20lb, 0 ACP, Spear 1d8, 6lb, Shortbow (1d6, 2lb
 * [Restore Corpse](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/restoreCorpse.html#restore-corpse) - Corpse grow flesh back (not fit for eating)  
 * [Interrogation](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/interrogation.html#interrogation) - Target save vs. fort or takes 1d4 + Wis modifier damage and suffer -4 bluff against you. 1 Question / 2 CL.  
 * [Persuasive Goad](http://paizo.com/pathfinderRPG/prd/ultimateMagic/spells/persuasiveGoad.html#persuasive-goad) - Target save vs. fort or takes 1d6 nonleathel damage and you gain +4 intimidate against them.  
-*  
-<!---
 
+**********************
+<!---
 
 2nd level
 http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/spectralHand.html#spectral-hand
@@ -297,7 +308,7 @@ The figure, is suddnely struck by a sudden clear memory of the dream she had tha
 A quick prayer for the Thanatos.  
 "Bring.. *that*.. with you." she sent to the fresh zombie, as they started making their way back through the dark night.
 
-#### The Middle years [WIP]
+#### The Middle years
 
 The first thing I remember is Teacher.  
 
@@ -467,9 +478,9 @@ A practitioner of vile and forbidden arts, the dread necromancer roots about in 
 She calls upon restless, tormented spirits of the dead, seeking their arcane secrets.  
 She might be a consummate villain, or perhaps a tortured hero whose obsession with death leads her along questionable moral paths.  
 
-### Making a Dread Necromancer
+****************************
 
-***********
+### Making a Dread Necromancer
 
 ## <a name="Creation"></a> Creation Method and Sources
 
@@ -487,7 +498,7 @@ She might be a consummate villain, or perhaps a tortured hero whose obsession wi
   * Int - 12 (2)
   * Wis - 12 (2)
 
-******
+****************************
 
 ## <a name="Undead"></a> Type: [Undead](http://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead)
  
@@ -539,7 +550,7 @@ The ceremony that lasts for 24 hours—the usual time it takes for the petitione
 ### <a name=""></a> Game Effect:
 Immediately upon opening its undead eyes, a new necropolitan loses a level as if the spell raise dead had been used on it and it was alive instead of animate. (If the subject has no levels to lose, it is simply destroyed.) It then also loses an additional 1,000 XP. If the loss of this much XP forces the necropolitan to lose another level, then it loses another level. No spell, not even restoration, can restore this lost XP. Petitioners may not spend experience points they don’t have—if the level loss and the 1,000 XP cost drains a creature to 0 XP or less, it is destroyed, turned to dust, and can never be raised or revived again using any means. If the ritual is interrupted before it is completed, the petitioner is merely dead.
 
-******
+****************************
 
 
 ## <a name=""></a> Drawbacks
@@ -576,4 +587,4 @@ Effect: Animals do not willingly approach within 30 feet of you, unless you or t
 
 **Benefits:** You gain a +1 trait bonus on Perception checks, and Perception is always a class skill for you.
  
-*******
+****************************
