@@ -4,7 +4,7 @@
 
 #### <a name=""></a> Teven.
 
-Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 2.
+Necropolitan Illumian (power sigil: naenhoon) Dread Necromancer 3.
 [Medium undead, augmented humanoid]
 
 **Desription**  
@@ -14,13 +14,13 @@ Backpack with lots of pockets with bedroll, spear, shortbow, quiver.
 Wolf - large
 
 **Ability Scores:** Str: 8, Dex:12 , Con: N/A, Wis: 12, Int: 12, Cha: 20, **AC/FF/Touch:** 17/14/13  
-**B.A.B:** +1, **Initiative:** +3 (+1 Dex, +2 Trait), **H.P:** 26  
-**Fort**: +5 (+0 base, +5 cha), **Ref**: +2 (+0 base, +1 dex +1 trait),  **Will**: +2 (+0 base, +1 wis +1 trait)  
+**B.A.B:** +1, **Initiative:** +3 (+1 Dex, +2 Trait), **H.P:** 39  
+**Fort**: +6 (+1 base, +5 cha), **Ref**: +3 (+1 base, +1 dex +1 trait),  **Will**: +2 (+0 base, +1 wis +1 trait)  
 **Skills:** (Note: All Int/Wis/Cha gain +2 from sigils)
-* Bluff: +10 (+2 ranks, +3 C.C, +5 cha)
-* Disguise: +10 (+2 ranks, +3 C.C, +5 cha)
-* Diplomacy: +10 (+2 ranks, +3 C.C, +5 cha)
-* Perception: +9 (+2 ranks, +3 C.C, +1 wis +1 trait +2 sigils)
+* Bluff: +11 (+3 ranks, +3 C.C, +5 cha)
+* Disguise: +11 (+3 ranks, +3 C.C, +5 cha)
+* Diplomacy: +11 (+3 ranks, +3 C.C, +5 cha)
+* Perception: +10 (+3 ranks, +3 C.C, +1 wis +1 trait +2 sigils)
 * Use Magic Device: +9 (+1 ranks, +3 C.C, +5 cha)
 * Spellcraft: +7 (+1 ranks, +3 C.C, + 1 int +2 sigil)  
   
@@ -30,8 +30,8 @@ Shortbow: +2 1d6-1, spear: +0 1d8-1
 **[Woofie](http://www.d20pfsrd.com/bestiary/monster-listings/undead/zombie/zombie-fast/zombie-fast-wolf/)**  
 Speed 60 ft, init +3; Senses darkvision 60 ft.; Perception +0, Immune undead traits  
 AC 15, touch 13, flat-footed 12 (+3 Dex, +2 natural)    
-hp 27, Fort +1, Ref +4, Will +3  
-Melee bite +4 (1d6+3 plus trip), slam +4 (1d6+3)  
+hp 31, Fort +1, Ref +4, Will +3  
+Melee bite +6 (1d6+6 plus trip), slam +6 (1d6+6)  
   
 **Special Abilities:**  
 * Ilumian:
@@ -44,12 +44,13 @@ Melee bite +4 (1d6+3 plus trip), slam +4 (1d6+3)
   * Chanel Negative Energy 1d6, 8 times a day
   * Charnal Touch – 1d8+1 negative energy damage, or heal 2 damage to undead.
   * Lich Body – DR 2/ Bludgeoning
-  
+  * Negative Energy Burst (Su): 1d4/lvl NE, 5ft radius. DC 10+1/2*lvl+Cha for half. 1/day at 3rd + 1 per 5 lvls.
+
 **Feats:**  
 - [x] 1st lvl: [Fell Animate](http://archive.wizards.com/default.asp?x=dnd/ex/20041001a) (Metamagic [+2], creatures fell by the spell animate as per [animate dead](www.d20pfsrd.com/magic/all-spells/a/animate-dead/)) 
 - [x] 1st lvl (Dread Necro bonus): [Command Undead](http://www.d20pfsrd.com/feats/general-feats/command-undead-final/) (Standard action, enslave undead at 30ft radius, DC 15 + 1/2 Dread Necromancer level), enslavement as per [control undead spell](http://www.d20pfsrd.com/magic/all-spells/c/control-undead)
+- [X] 3rd lvl: [Corpsecrafter](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/corpsecrafter--432/index.html) - Undead you create has +4 STR and +2 HP/HD
 <!---
-- [ ] 3rd lvl: [Corpsecrafter](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/corpsecrafter--432/index.html)
 - [ ] 5th lvl: [Explosive Retribution](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/destruction-retribution--591/index.html)
 - [ ] 7th lvl: [Metamagic School Focus (Necromancy)]
 - [ ] 9th lvl: [Profane Lifeleech]
@@ -73,7 +74,7 @@ Masterwork Studded leather   +3, 20lb, 0 ACP, Spear 1d8, 6lb, Shortbow (1d6, 2lb
   * [Eyes and Ears of the City](http://www.d20pfsrd.com/traits/religion-traits/eyes-and-ears-of-the-city-god-of-commerce/) - +1 on Perception  
       
 **Controlling Undead**  
-* From Fell Animate / Animate Dead : 4HD/level = a total of 8HD  
+* From Fell Animate / Animate Dead : 4HD/level = a total of 12HD  
 * From Command Undead: HD/level = a total of 3HD  
 **********************
 
@@ -90,7 +91,7 @@ Masterwork Studded leather   +3, 20lb, 0 ACP, Spear 1d8, 6lb, Shortbow (1d6, 2lb
 * [Disrupt Undead](http://www.dxcontent.com/SDB_SpellBlock.asp?SDBID=163) - Deals 1d6 damage to one undead  
 * [Sotto Voice](http://www.dxcontent.com/SDB_SpellBlock.asp?SDBID=658) - Save vs. Will or be Shaken for 1 round.
   
-#### 1st Level  (8/day)
+#### 1st Level  (9/day)
 * [Bane](http://www.d20pfsrd.com/magic/all-spells/b/bane/) - Enemies at 50ft radius save vs. will or take -1 on attack and saves  
 * [Bestow Wound](http://dnd.arkalseif.info/spells/heroes-of-horror--70/bestow-wound--1448/index.html) - Touch a living creature, if they fail Fort, they take 1 dmg / caster level and you as much  
 * [Cause Fear](http://www.d20pfsrd.com/magic/all-spells/c/cause-fear/) - Target in close range becomes frightened for 1d4 rounds or shaken for 1 round if they save vs will. 6HD or higher immune  
@@ -159,24 +160,24 @@ http://paizo.com/pathfinderRPG/prd/coreRulebook/spells/ghoulTouch.html#ghoul-tou
 
 ********
 #### [Woofie](http://www.d20pfsrd.com/bestiary/monster-listings/undead/zombie/zombie-fast/zombie-fast-wolf/)
-Zombie, Fast (Wolf)  
+Zombie, Fast (Wolf) - With [Corpsecrafter](http://dnd.arkalseif.info/feats/libris-mortis-the-book-of-undead--71/corpsecrafter--432/index.html)
   
 NE Medium undead  
 Init +3; Senses darkvision 60 ft.; Perception +0  
   
 **DEFENSE**
 AC 15, touch 13, flat-footed 12 (+3 Dex, +2 natural)  
-hp 27 (3d8+3)  
+hp 33 (3d8+9)  
 Fort +1, Ref +4, Will +3  
 Immune undead traits  
   
 **OFFENSE**  
 Speed 60 ft.  
-Melee bite +4 (1d6+3 plus trip), slam +4 (1d6+3)  
+Melee bite +6 (1d6+6 plus trip), slam +6 (1d6+6)  
 Special Attacks quick strikes  
   
 **STATISTICS**  
-Str 15, Dex 17, Con —, Int —, Wis 10, Cha 10  
+Str 19, Dex 17, Con —, Int —, Wis 10, Cha 10  
 Base Atk +2; CMB +4; CMD 17 (21 vs. trip)  
 Feats ToughnessB   
   
